@@ -1,0 +1,39 @@
+{
+  "name": "riotjs-web-template",
+  "version": "0.0.1",
+  "description": "riot template for website development",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohmanahmad/riotjs-web-template.git"
+  },
+  "keywords": [
+    "riotjs",
+    "boilerplate",
+    "template",
+    "framework"
+  ],
+  "author": "rohmanahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohmanahmad/riotjs-web-template/issues"
+  },
+  "homepage": "https://github.com/rohmanahmad/riotjs-web-template#readme",
+  "devDependencies": {
+    "@riotjs/compiler": "^6.4.1",
+    "@riotjs/hot-reload": "^6.0.1",
+    "@riotjs/route": "^8.0.2",
+    "@riotjs/webpack-loader": "^6.0.0",
+    "dotenv": "^16.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "riot": "^7.0.7"
+  }
+}
