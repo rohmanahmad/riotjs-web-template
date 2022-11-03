@@ -9,9 +9,9 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
-    filename: 'bundle[chunkhash].js'
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/public/',
+    filename: 'bundle-[chunkhash].js'
   },
   plugins: [
       new HtmlWebpackPlugin({
@@ -35,10 +35,28 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+          test: /\.(jpg|jpeg|gif|png|ico)$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'file-loader?name=[name].[ext]'
+            }
+          ]
+      },
+      {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'babel-loader',
+            }
+          ]
       }
     ]
   },
-  // devtool: 'inline-source-map',
+  devtool: 'inline-source-map',
   devServer: {
       liveReload: true,
       compress: true,

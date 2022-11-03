@@ -1,34 +1,12 @@
-import { component, register, mount } from 'riot'
-// import { route, router, setBase } from '@riotjs/route'
+import '@riotjs/hot-reload'
 
-import routes from './modules/routes'
-import modules from './modules/modules'
+import { component } from 'riot'
 
-import mainLayout from './globals/layouts/main-layout.riot'
+import MainLayout from './layouts/main-layout.riot'
 
-// const $app = document.getElementById('app')
+import registerAllGlobalComponents from './register'
 
-// setBase('/')
+registerAllGlobalComponents()
 
-// register all pages
-alert
-routes.forEach(item => {
-    const { path, page } = item
-    console.log('path', path)
-    register(path, modules[page])
-})
 
-const appModule = component(mainLayout)($app)
-
-// const router = (e) => {
-//     console.log(e)
-// }
-
-// window.addEventListener('load', router)
-
-mount('#app', {}, '/')
-alert()
-
-// router.on.value(path => {
-//     console.log(path)
-// })
+component(MainLayout)(document.getElementById('app'))

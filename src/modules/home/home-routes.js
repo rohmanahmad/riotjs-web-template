@@ -1,6 +1,7 @@
 export default [
     {
         path: '/',
-        page: 'HomePage'
+        label: 'Home',
+        componentName: 'home'
     }
 ]

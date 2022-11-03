@@ -4,7 +4,8 @@
   "description": "riot template for website development",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.js"
+    "dev": "./node_modules/webpack/bin/webpack.js serve --mode development --hot --port 3000 --config webpack-dev.config.js",
+    "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@riotjs/compiler": "^6.4.1",
     "@riotjs/hot-reload": "^6.0.1",
+    "@riotjs/lazy": "^2.0.2",
     "@riotjs/route": "^8.0.2",
     "@riotjs/webpack-loader": "^6.0.0",
     "dotenv": "^16.0.3",
