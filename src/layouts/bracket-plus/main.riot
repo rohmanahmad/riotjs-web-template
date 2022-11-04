@@ -1,0 +1,36 @@
+<main-layout>
+    <div class="container">
+        <router>
+            <div class="row">
+              <nav class="menu column">
+                <a
+                  each={page in state.pages}
+                  class={state.activePage === page ? 'active' : '' }
+                  href={page.path}>
+                  {page.label}
+                </a>
+              </nav>
+            </div>
+            <div if={state.showNotFound} class="row">
+              <div class="column column-60">
+                <not-found />
+              </div>
+            </div>
+            <div if={!state.showNotFound} class="row">
+              <div class="column column-60">
+                <route each={page in state.pages} path={page.path}>
+                  <div is={page.componentName}></div>
+                </route>
+              </div>
+              <!-- notice how <sidebar> is registered as global component -->
+              <div class="column column-40">
+                <!-- sidebar -->
+              </div>
+            </div>
+        </router>
+    </div>
+    <script>
+        import controller from './main'
+        export default controller
+    </script>
+</main-layout>

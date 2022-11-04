@@ -1,0 +1,5516 @@
+[
+  {
+    "name": "Aceh",
+    "capital_city_id": "11.71",
+    "parent_id": "",
+    "id": "11",
+    "coordinate": [
+      95.326673,
+      5.559324
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sumatera Utara",
+    "capital_city_id": "12.75",
+    "parent_id": "",
+    "id": "12",
+    "coordinate": [
+      98.675827,
+      3.621124
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sumatera Barat",
+    "capital_city_id": "13.71",
+    "parent_id": "",
+    "id": "13",
+    "coordinate": [
+      100.435289,
+      -0.899538
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Riau",
+    "capital_city_id": "14.71",
+    "parent_id": "",
+    "id": "14",
+    "coordinate": [
+      101.46705,
+      0.545969
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Jambi",
+    "capital_city_id": "15.71",
+    "parent_id": "",
+    "id": "15",
+    "coordinate": [
+      103.59238,
+      -1.618303
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sumatera Selatan",
+    "capital_city_id": "16.71",
+    "parent_id": "",
+    "id": "16",
+    "coordinate": [
+      104.726315,
+      -2.977204
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Bengkulu",
+    "capital_city_id": "17.71",
+    "parent_id": "",
+    "id": "17",
+    "coordinate": [
+      102.31269,
+      -3.829005
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Lampung",
+    "capital_city_id": "18.71",
+    "parent_id": "",
+    "id": "18",
+    "coordinate": [
+      105.26677,
+      -5.41385
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Kepulauan Bangka Belitung",
+    "capital_city_id": "19.71",
+    "parent_id": "",
+    "id": "19",
+    "coordinate": [
+      106.117216,
+      -2.104374
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Kepulauan Riau",
+    "capital_city_id": "21.72",
+    "parent_id": "",
+    "id": "21",
+    "coordinate": [
+      104.485226,
+      0.926851
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Jakarta Raya",
+    "capital_city_id": "31.73",
+    "parent_id": "",
+    "id": "31",
+    "coordinate": [
+      106.829848,
+      -6.179923
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Jawa Barat",
+    "capital_city_id": "32.73",
+    "parent_id": "",
+    "id": "32",
+    "coordinate": [
+      107.633988,
+      -6.923056
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Jawa Tengah",
+    "capital_city_id": "33.22",
+    "parent_id": "",
+    "id": "33",
+    "coordinate": [
+      110.389535,
+      -7.019111
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Yogyakarta",
+    "capital_city_id": "34.71",
+    "parent_id": "",
+    "id": "34",
+    "coordinate": [
+      110.374354,
+      -7.801984
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Jawa Timur",
+    "capital_city_id": "35.78",
+    "parent_id": "",
+    "id": "35",
+    "coordinate": [
+      112.720058,
+      -7.276695
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Banten",
+    "capital_city_id": "36.73",
+    "parent_id": "",
+    "id": "36",
+    "coordinate": [
+      106.168906,
+      -6.122106
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Bali",
+    "capital_city_id": "51.71",
+    "parent_id": "",
+    "id": "51",
+    "coordinate": [
+      115.220936,
+      -8.664793
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Nusa Tenggara Barat",
+    "capital_city_id": "52.71",
+    "parent_id": "",
+    "id": "52",
+    "coordinate": [
+      116.105865,
+      -8.588962
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Nusa Tenggara Timur",
+    "capital_city_id": "53.71",
+    "parent_id": "",
+    "id": "53",
+    "coordinate": [
+      123.604713,
+      -10.205223
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Kalimantan Barat",
+    "capital_city_id": "61.71",
+    "parent_id": "",
+    "id": "61",
+    "coordinate": [
+      109.334019,
+      -0.0213
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Kalimantan Tengah",
+    "capital_city_id": "62.71",
+    "parent_id": "",
+    "id": "62",
+    "coordinate": [
+      113.766455,
+      -2.019763
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Kalimantan Selatan",
+    "capital_city_id": "63.71",
+    "parent_id": "",
+    "id": "63",
+    "coordinate": [
+      114.600988,
+      -3.324679
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Kalimantan Timur",
+    "capital_city_id": "64.72",
+    "parent_id": "",
+    "id": "64",
+    "coordinate": [
+      117.183905,
+      -0.499393
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Kalimantan Utara",
+    "capital_city_id": "65.02",
+    "parent_id": "",
+    "id": "65",
+    "coordinate": [
+      117.436937,
+      2.770273
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sulawesi Utara",
+    "capital_city_id": "71.71",
+    "parent_id": "",
+    "id": "71",
+    "coordinate": [
+      124.844185,
+      1.52505
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sulawesi Tengah",
+    "capital_city_id": "72.71",
+    "parent_id": "",
+    "id": "72",
+    "coordinate": [
+      119.915202,
+      -0.828493
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sulawesi Selatan",
+    "capital_city_id": "73.71",
+    "parent_id": "",
+    "id": "73",
+    "coordinate": [
+      119.461148,
+      -5.13211
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sulawesi Tenggara",
+    "capital_city_id": "74.71",
+    "parent_id": "",
+    "id": "74",
+    "coordinate": [
+      122.527361,
+      -4.001699
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Gorontalo",
+    "capital_city_id": "75.71",
+    "parent_id": "",
+    "id": "75",
+    "coordinate": [
+      123.056894,
+      0.535839
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Sulawesi Barat",
+    "capital_city_id": "76.04",
+    "parent_id": "",
+    "id": "76",
+    "coordinate": [
+      119.402974,
+      -2.327817
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Maluku",
+    "capital_city_id": "81.71",
+    "parent_id": "",
+    "id": "81",
+    "coordinate": [
+      128.178314,
+      -3.671571
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Maluku Utara",
+    "capital_city_id": "82.71",
+    "parent_id": "",
+    "id": "82",
+    "coordinate": [
+      127.175192,
+      0.840146
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Papua",
+    "capital_city_id": "94.03",
+    "parent_id": "",
+    "id": "91",
+    "coordinate": [
+      140.811513,
+      -2.663273
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "Papua Barat",
+    "capital_city_id": "91.05",
+    "parent_id": "",
+    "id": "94",
+    "coordinate": [
+      133.534794,
+      -1.123095
+    ],
+    "kind": "PROVINSI"
+  },
+  {
+    "name": "banjar",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.03",
+    "coordinate": [
+      115.08834605497566,
+      -3.3182524388788996
+    ]
+  },
+  {
+    "name": "kotabaru",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.02",
+    "coordinate": [
+      116.06540106821664,
+      -2.986971103203463
+    ]
+  },
+  {
+    "name": "tapin",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.05",
+    "coordinate": [
+      115.04784351660564,
+      -2.924670067335628
+    ]
+  },
+  {
+    "name": "barito kuala",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.04",
+    "coordinate": [
+      114.62607152606039,
+      -3.090319816909287
+    ]
+  },
+  {
+    "name": "hulu sungai tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.07",
+    "coordinate": [
+      115.5021348817502,
+      -2.6034915370858243
+    ]
+  },
+  {
+    "name": "hulu sungai selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.06",
+    "coordinate": [
+      115.20686808873474,
+      -2.7282749572293845
+    ]
+  },
+  {
+    "name": "tabalong",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.09",
+    "coordinate": [
+      115.51647778087484,
+      -1.8860137256206686
+    ]
+  },
+  {
+    "name": "lombok tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.02",
+    "coordinate": [
+      116.28914365062595,
+      -8.722795722011716
+    ]
+  },
+  {
+    "name": "dompu",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.05",
+    "coordinate": [
+      118.21680616992028,
+      -8.472142046585871
+    ]
+  },
+  {
+    "name": "sumbawa",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.04",
+    "coordinate": [
+      117.48493824778805,
+      -8.703221236510476
+    ]
+  },
+  {
+    "name": "sumbawa barat",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.07",
+    "coordinate": [
+      116.91505788114627,
+      -8.829708666055755
+    ]
+  },
+  {
+    "name": "bima",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.06",
+    "coordinate": [
+      118.6186198333593,
+      -8.474763732743645
+    ]
+  },
+  {
+    "name": "lombok utara",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.08",
+    "coordinate": [
+      116.28349722385171,
+      -8.349040689461217
+    ]
+  },
+  {
+    "name": "lombok barat",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.01",
+    "coordinate": [
+      116.09423466441325,
+      -8.664408902150745
+    ]
+  },
+  {
+    "name": "baubau",
+    "kind": "KOTA",
+    "parent_id": "74",
+    "id": "74.72",
+    "coordinate": [
+      122.67526759529557,
+      -5.430032568773429
+    ]
+  },
+  {
+    "name": "kendari",
+    "kind": "KOTA",
+    "parent_id": "74",
+    "id": "74.71",
+    "coordinate": [
+      122.53262115759605,
+      -4.000395490527612
+    ]
+  },
+  {
+    "name": "metro",
+    "kind": "KOTA",
+    "parent_id": "18",
+    "id": "18.72",
+    "coordinate": [
+      105.30644327776214,
+      -5.121824360480168
+    ]
+  },
+  {
+    "name": "bandar lampung",
+    "kind": "KOTA",
+    "parent_id": "18",
+    "id": "18.71",
+    "coordinate": [
+      105.26693845402542,
+      -5.415381606465469
+    ]
+  },
+  {
+    "name": "kuningan",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.08",
+    "coordinate": [
+      108.56030060920688,
+      -7.00423329728525
+    ]
+  },
+  {
+    "name": "ciamis",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.07",
+    "coordinate": [
+      108.42864857629063,
+      -7.290536910113071
+    ]
+  },
+  {
+    "name": "tasikmalaya",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.06",
+    "coordinate": [
+      108.14129646608144,
+      -7.4967058260523025
+    ]
+  },
+  {
+    "name": "garut",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.05",
+    "coordinate": [
+      107.78886394491728,
+      -7.35955671840672
+    ]
+  },
+  {
+    "name": "bandung",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.04",
+    "coordinate": [
+      107.61084118113308,
+      -7.099968710988974
+    ]
+  },
+  {
+    "name": "cianjur",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.03",
+    "coordinate": [
+      107.15776356490261,
+      -7.1337159251381035
+    ]
+  },
+  {
+    "name": "denpasar",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.71",
+    "coordinate": [
+      115.22086621223097,
+      -8.668357701004503
+    ]
+  },
+  {
+    "name": "sukabumi",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.02",
+    "coordinate": [
+      106.70730771193702,
+      -7.076187588734382
+    ]
+  },
+  {
+    "name": "bogor",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.01",
+    "coordinate": [
+      106.76753084547583,
+      -6.559979467022706
+    ]
+  },
+  {
+    "name": "nunukan",
+    "kind": "KABUPATEN",
+    "parent_id": "65",
+    "id": "65.04",
+    "coordinate": [
+      116.66301411215049,
+      3.994608067878813
+    ]
+  },
+  {
+    "name": "tana tidung",
+    "kind": "KABUPATEN",
+    "parent_id": "65",
+    "id": "65.03",
+    "coordinate": [
+      117.16711575108599,
+      3.551739027038918
+    ]
+  },
+  {
+    "name": "cirebon",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.09",
+    "coordinate": [
+      108.55156471274965,
+      -6.745639064897953
+    ]
+  },
+  {
+    "name": "bulungan",
+    "kind": "KABUPATEN",
+    "parent_id": "65",
+    "id": "65.02",
+    "coordinate": [
+      117.03748851304283,
+      2.814671556059921
+    ]
+  },
+  {
+    "name": "malinau",
+    "kind": "KABUPATEN",
+    "parent_id": "65",
+    "id": "65.01",
+    "coordinate": [
+      115.71684783274151,
+      2.4781974100566093
+    ]
+  },
+  {
+    "name": "sabu raijua",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.20",
+    "coordinate": [
+      121.84435407291065,
+      -10.535743534506603
+    ]
+  },
+  {
+    "name": "malaka",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.21",
+    "coordinate": [
+      124.88932003587496,
+      -9.521769042288023
+    ]
+  },
+  {
+    "name": "Kota bima",
+    "kind": "KOTA",
+    "parent_id": "52",
+    "id": "52.72",
+    "coordinate": [
+      118.78490660494545,
+      -8.455799299484365
+    ]
+  },
+  {
+    "name": "mataram",
+    "kind": "KOTA",
+    "parent_id": "52",
+    "id": "52.71",
+    "coordinate": [
+      116.1110930708071,
+      -8.590268780483251
+    ]
+  },
+  {
+    "name": "pangkal pinang",
+    "kind": "KOTA",
+    "parent_id": "19",
+    "id": "19.71",
+    "coordinate": [
+      106.11347198314412,
+      -2.1106627658997157
+    ]
+  },
+  {
+    "name": "banjar baru",
+    "kind": "KOTA",
+    "parent_id": "63",
+    "id": "63.72",
+    "coordinate": [
+      114.81839109306397,
+      -3.4764439930600077
+    ]
+  },
+  {
+    "name": "banjarmasin",
+    "kind": "KOTA",
+    "parent_id": "63",
+    "id": "63.71",
+    "coordinate": [
+      114.59191315341253,
+      -3.329346106878267
+    ]
+  },
+  {
+    "name": "jakarta selatan",
+    "kind": "KOTA",
+    "parent_id": "31",
+    "id": "31.71",
+    "coordinate": [
+      106.81001091218158,
+      -6.2726792189587695
+    ]
+  },
+  {
+    "name": "jakarta timur",
+    "kind": "KOTA",
+    "parent_id": "31",
+    "id": "31.72",
+    "coordinate": [
+      106.90026866606344,
+      -6.255373353886109
+    ]
+  },
+  {
+    "name": "jakarta pusat",
+    "kind": "KOTA",
+    "parent_id": "31",
+    "id": "31.73",
+    "coordinate": [
+      106.83507594606193,
+      -6.18123019352606
+    ]
+  },
+  {
+    "name": "jakarta barat",
+    "kind": "KOTA",
+    "parent_id": "31",
+    "id": "31.74",
+    "coordinate": [
+      106.74840260333556,
+      -6.165608866360083
+    ]
+  },
+  {
+    "name": "jakarta utara",
+    "kind": "KOTA",
+    "parent_id": "31",
+    "id": "31.75",
+    "coordinate": [
+      106.86907985891756,
+      -6.129207507840278
+    ]
+  },
+  {
+    "name": "Kota kupang",
+    "kind": "KOTA",
+    "parent_id": "53",
+    "id": "53.71",
+    "coordinate": [
+      123.60718411600747,
+      -10.2042974926858
+    ]
+  },
+  {
+    "name": "brebes",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.29",
+    "coordinate": [
+      108.9279208768439,
+      -7.0589030521127025
+    ]
+  },
+  {
+    "name": "pemalang",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.27",
+    "coordinate": [
+      109.39502279684666,
+      -7.036441155458044
+    ]
+  },
+  {
+    "name": "tegal",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.28",
+    "coordinate": [
+      109.15840511489957,
+      -7.031102082209213
+    ]
+  },
+  {
+    "name": "batang",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.25",
+    "coordinate": [
+      109.86149351951416,
+      -7.0212670646155475
+    ]
+  },
+  {
+    "name": "bantul",
+    "kind": "KABUPATEN",
+    "parent_id": "34",
+    "id": "34.02",
+    "coordinate": [
+      110.35469235656775,
+      -7.90166934212102
+    ]
+  },
+  {
+    "name": "pekalongan",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.26",
+    "coordinate": [
+      109.62041684086626,
+      -7.056829234885222
+    ]
+  },
+  {
+    "name": "balikpapan",
+    "kind": "KOTA",
+    "parent_id": "64",
+    "id": "64.71",
+    "coordinate": [
+      116.86560440839182,
+      -1.1593697357265933
+    ]
+  },
+  {
+    "name": "kulon progo",
+    "kind": "KABUPATEN",
+    "parent_id": "34",
+    "id": "34.01",
+    "coordinate": [
+      110.1674072582501,
+      -7.818871152508596
+    ]
+  },
+  {
+    "name": "temanggung",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.23",
+    "coordinate": [
+      110.13563223850585,
+      -7.2578588607961265
+    ]
+  },
+  {
+    "name": "sleman",
+    "kind": "KABUPATEN",
+    "parent_id": "34",
+    "id": "34.04",
+    "coordinate": [
+      110.38349094654885,
+      -7.715434802367196
+    ]
+  },
+  {
+    "name": "kendal",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.24",
+    "coordinate": [
+      110.15611941988868,
+      -7.037666056839582
+    ]
+  },
+  {
+    "name": "gunung kidul",
+    "kind": "KABUPATEN",
+    "parent_id": "34",
+    "id": "34.03",
+    "coordinate": [
+      110.61206097097478,
+      -7.994236636500871
+    ]
+  },
+  {
+    "name": "demak",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.21",
+    "coordinate": [
+      110.63184997014059,
+      -6.910835787319402
+    ]
+  },
+  {
+    "name": "semarang",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.22",
+    "coordinate": [
+      110.47526539117423,
+      -7.272031347764527
+    ]
+  },
+  {
+    "name": "jepara",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.20",
+    "coordinate": [
+      110.76785796792093,
+      -6.548526325748518
+    ]
+  },
+  {
+    "name": "pati",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.18",
+    "coordinate": [
+      111.04151575135215,
+      -6.743927283396392
+    ]
+  },
+  {
+    "name": "kudus",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.19",
+    "coordinate": [
+      110.86972183986474,
+      -6.789068065223105
+    ]
+  },
+  {
+    "name": "blora",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.16",
+    "coordinate": [
+      111.38763646757553,
+      -7.075962271627127
+    ]
+  },
+  {
+    "name": "rembang",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.17",
+    "coordinate": [
+      111.46127501132861,
+      -6.77546278430523
+    ]
+  },
+  {
+    "name": "sragen",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.14",
+    "coordinate": [
+      110.97743518402423,
+      -7.38713115579642
+    ]
+  },
+  {
+    "name": "grobogan",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.15",
+    "coordinate": [
+      110.92710072783987,
+      -7.11687964158796
+    ]
+  },
+  {
+    "name": "wonogiri",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.12",
+    "coordinate": [
+      111.00040363972423,
+      -7.9202016678673735
+    ]
+  },
+  {
+    "name": "karanganyar",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.13",
+    "coordinate": [
+      111.01926549922413,
+      -7.614457727032213
+    ]
+  },
+  {
+    "name": "klaten",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.10",
+    "coordinate": [
+      110.6198975790956,
+      -7.686395182564564
+    ]
+  },
+  {
+    "name": "sukoharjo",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.11",
+    "coordinate": [
+      110.83462853809563,
+      -7.680857381615399
+    ]
+  },
+  {
+    "name": "prabumulih",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.72",
+    "coordinate": [
+      104.22938797271317,
+      -3.4528350659372347
+    ]
+  },
+  {
+    "name": "wonosobo",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.07",
+    "coordinate": [
+      109.90722304141848,
+      -7.415535227460479
+    ]
+  },
+  {
+    "name": "magelang",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.08",
+    "coordinate": [
+      110.24673320190688,
+      -7.5015796907858245
+    ]
+  },
+  {
+    "name": "kebumen",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.05",
+    "coordinate": [
+      109.61736012817263,
+      -7.655168797936954
+    ]
+  },
+  {
+    "name": "Kota banjar",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.79",
+    "coordinate": [
+      108.56650169748981,
+      -7.376302002558945
+    ]
+  },
+  {
+    "name": "Kota tasikmalaya",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.78",
+    "coordinate": [
+      108.21935467377362,
+      -7.360251032230272
+    ]
+  },
+  {
+    "name": "cimahi",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.77",
+    "coordinate": [
+      107.54358233252104,
+      -6.8864951878721365
+    ]
+  },
+  {
+    "name": "pandeglang",
+    "kind": "KABUPATEN",
+    "parent_id": "36",
+    "id": "36.01",
+    "coordinate": [
+      105.74298213136849,
+      -6.590230674587408
+    ]
+  },
+  {
+    "name": "tuban",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.23",
+    "coordinate": [
+      111.89151236542898,
+      -6.953135780557476
+    ]
+  },
+  {
+    "name": "lamongan",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.24",
+    "coordinate": [
+      112.30078102692259,
+      -7.131112427542553
+    ]
+  },
+  {
+    "name": "bangkalan",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.26",
+    "coordinate": [
+      112.92961846941178,
+      -7.044238203057984
+    ]
+  },
+  {
+    "name": "serang",
+    "kind": "KABUPATEN",
+    "parent_id": "36",
+    "id": "36.04",
+    "coordinate": [
+      106.14665479297022,
+      -6.142218832568723
+    ]
+  },
+  {
+    "name": "magetan",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.20",
+    "coordinate": [
+      111.35790230977884,
+      -7.662881347848414
+    ]
+  },
+  {
+    "name": "ngawi",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.21",
+    "coordinate": [
+      111.34309014536434,
+      -7.4392385313213705
+    ]
+  },
+  {
+    "name": "bojonegoro",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.22",
+    "coordinate": [
+      111.80983738272347,
+      -7.255432760398688
+    ]
+  },
+  {
+    "name": "mojokerto",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.16",
+    "coordinate": [
+      112.48524906331683,
+      -7.549867573606394
+    ]
+  },
+  {
+    "name": "jombang",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.17",
+    "coordinate": [
+      112.26512949704389,
+      -7.545102365317378
+    ]
+  },
+  {
+    "name": "nganjuk",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.18",
+    "coordinate": [
+      111.93843861808504,
+      -7.597422632452058
+    ]
+  },
+  {
+    "name": "madiun",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.19",
+    "coordinate": [
+      111.64571620144947,
+      -7.624222279053114
+    ]
+  },
+  {
+    "name": "situbondo",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.12",
+    "coordinate": [
+      114.05138042966121,
+      -7.8013124802294795
+    ]
+  },
+  {
+    "name": "probolinggo",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.13",
+    "coordinate": [
+      113.32086690463304,
+      -7.866519797017342
+    ]
+  },
+  {
+    "name": "pasuruan",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.14",
+    "coordinate": [
+      112.83173968173287,
+      -7.7429181729250205
+    ]
+  },
+  {
+    "name": "lampung selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.03",
+    "coordinate": [
+      105.50050124583528,
+      -5.53277241875364
+    ]
+  },
+  {
+    "name": "donggala",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.05",
+    "coordinate": [
+      119.8357213901322,
+      -0.39587130573838586
+    ]
+  },
+  {
+    "name": "tanggamus",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.02",
+    "coordinate": [
+      104.67520992042621,
+      -5.435863409377126
+    ]
+  },
+  {
+    "name": "poso",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.04",
+    "coordinate": [
+      120.52109188378063,
+      -1.6808249431408706
+    ]
+  },
+  {
+    "name": "nabire",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.04",
+    "coordinate": [
+      135.58432518256592,
+      -3.3765550831425024
+    ]
+  },
+  {
+    "name": "bolaang mongondow selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.10",
+    "coordinate": [
+      123.93289652058398,
+      0.4442332954696076
+    ]
+  },
+  {
+    "name": "bolaang mongondow timur",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.11",
+    "coordinate": [
+      124.51221840901951,
+      0.7194459634262921
+    ]
+  },
+  {
+    "name": "bangka selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "19",
+    "id": "19.05",
+    "coordinate": [
+      106.34227161360411,
+      -2.770932907867751
+    ]
+  },
+  {
+    "name": "belitung timur",
+    "kind": "KABUPATEN",
+    "parent_id": "19",
+    "id": "19.06",
+    "coordinate": [
+      108.0523757780523,
+      -2.907114018134876
+    ]
+  },
+  {
+    "name": "bangka barat",
+    "kind": "KABUPATEN",
+    "parent_id": "19",
+    "id": "19.03",
+    "coordinate": [
+      105.48945311399605,
+      -1.8908611326623659
+    ]
+  },
+  {
+    "name": "bangka tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "19",
+    "id": "19.04",
+    "coordinate": [
+      106.2433156484301,
+      -2.4300828469371503
+    ]
+  },
+  {
+    "name": "bolaang mongondow utara",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.07",
+    "coordinate": [
+      123.48113247300145,
+      0.7679519781751916
+    ]
+  },
+  {
+    "name": "bangka",
+    "kind": "KABUPATEN",
+    "parent_id": "19",
+    "id": "19.01",
+    "coordinate": [
+      105.9212322542383,
+      -1.905887351614875
+    ]
+  },
+  {
+    "name": "siau tagulandang biaro",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.08",
+    "coordinate": [
+      125.39701583558289,
+      2.5398239092643884
+    ]
+  },
+  {
+    "name": "musi banyuasin",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.06",
+    "coordinate": [
+      103.82967204439676,
+      -2.444084092131842
+    ]
+  },
+  {
+    "name": "ogan komering ulu timur",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.09",
+    "coordinate": [
+      104.56792239708237,
+      -4.0688727722561655
+    ]
+  },
+  {
+    "name": "ogan komering ulu selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.08",
+    "coordinate": [
+      103.91524066145932,
+      -4.590247083896739
+    ]
+  },
+  {
+    "name": "raja ampat",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.08",
+    "coordinate": [
+      130.5742795418149,
+      -0.9001476227673467
+    ]
+  },
+  {
+    "name": "manokwari",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.05",
+    "coordinate": [
+      133.85250826786142,
+      -0.9099471245061836
+    ]
+  },
+  {
+    "name": "sorong selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.06",
+    "coordinate": [
+      132.15111963895106,
+      -1.7166780806752706
+    ]
+  },
+  {
+    "name": "teluk wondama",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.03",
+    "coordinate": [
+      134.374487320132,
+      -2.822811164120367
+    ]
+  },
+  {
+    "name": "teluk bintuni",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.04",
+    "coordinate": [
+      133.30851116211528,
+      -2.003098186647354
+    ]
+  },
+  {
+    "name": "fakfak",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.01",
+    "coordinate": [
+      132.912085384458,
+      -3.059297509307122
+    ]
+  },
+  {
+    "name": "kaimana",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.02",
+    "coordinate": [
+      134.02252082916215,
+      -3.613033613891536
+    ]
+  },
+  {
+    "name": "pulau morotai",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.07",
+    "coordinate": [
+      128.4483610249088,
+      2.316573109861098
+    ]
+  },
+  {
+    "name": "pulau taliabu",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.08",
+    "coordinate": [
+      124.74064221500494,
+      -1.8188599839184816
+    ]
+  },
+  {
+    "name": "tambrauw",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.09",
+    "coordinate": [
+      132.7511335705346,
+      -0.8067097434099262
+    ]
+  },
+  {
+    "name": "sorong",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.07",
+    "coordinate": [
+      131.5644871569568,
+      -1.1165907510304849
+    ]
+  },
+  {
+    "name": "gunungsitoli",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.78",
+    "coordinate": [
+      97.58308864655474,
+      1.2650961713459172
+    ]
+  },
+  {
+    "name": "kepulauan sula",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.03",
+    "coordinate": [
+      125.83907464449864,
+      -1.9632966215638736
+    ]
+  },
+  {
+    "name": "halmahera selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.04",
+    "coordinate": [
+      127.70511025102006,
+      -0.8235483253720313
+    ]
+  },
+  {
+    "name": "halmahera utara",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.05",
+    "coordinate": [
+      127.83106234989064,
+      1.5423149379196388
+    ]
+  },
+  {
+    "name": "halmahera timur",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.06",
+    "coordinate": [
+      128.30855556955711,
+      1.0311731824930226
+    ]
+  },
+  {
+    "name": "halmahera barat",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.01",
+    "coordinate": [
+      127.58966804507392,
+      1.3641786416917558
+    ]
+  },
+  {
+    "name": "halmahera tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.02",
+    "coordinate": [
+      128.2821966404359,
+      0.4027408368236716
+    ]
+  },
+  {
+    "name": "bengkulu selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.01",
+    "coordinate": [
+      103.02372960354762,
+      -4.348663159244859
+    ]
+  },
+  {
+    "name": "tanjung pinang",
+    "kind": "KOTA",
+    "parent_id": "21",
+    "id": "21.72",
+    "coordinate": [
+      104.48531330181936,
+      0.9202849604380476
+    ]
+  },
+  {
+    "name": "rejang lebong",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.02",
+    "coordinate": [
+      102.69889379606104,
+      -3.43079008549787
+    ]
+  },
+  {
+    "name": "bengkulu utara",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.03",
+    "coordinate": [
+      102.0157826246449,
+      -3.426920901157371
+    ]
+  },
+  {
+    "name": "kaur",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.04",
+    "coordinate": [
+      103.40750450113872,
+      -4.607197050988256
+    ]
+  },
+  {
+    "name": "seluma",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.05",
+    "coordinate": [
+      102.65781939830013,
+      -4.05231264818735
+    ]
+  },
+  {
+    "name": "mukomuko",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.06",
+    "coordinate": [
+      101.48559584962405,
+      -2.701394374576499
+    ]
+  },
+  {
+    "name": "lebong",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.07",
+    "coordinate": [
+      102.24947714544183,
+      -3.089926960149865
+    ]
+  },
+  {
+    "name": "kepahiang",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.08",
+    "coordinate": [
+      102.6416888783594,
+      -3.628231905258974
+    ]
+  },
+  {
+    "name": "bengkulu tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "17",
+    "id": "17.09",
+    "coordinate": [
+      102.41166953805235,
+      -3.687547359501789
+    ]
+  },
+  {
+    "name": "penukal abab lematang ilir",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.12",
+    "coordinate": [
+      103.98827927517115,
+      -3.2098845770095505
+    ]
+  },
+  {
+    "name": "empat lawang",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.11",
+    "coordinate": [
+      102.95359687250752,
+      -3.751943638792653
+    ]
+  },
+  {
+    "name": "maluku barat daya",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.08",
+    "coordinate": [
+      127.32388178406612,
+      -7.823387107381408
+    ]
+  },
+  {
+    "name": "seram bagian timur",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.07",
+    "coordinate": [
+      130.43830989874408,
+      -3.415883578917633
+    ]
+  },
+  {
+    "name": "musi rawas utara",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.13",
+    "coordinate": [
+      102.7358397425041,
+      -2.7443985748847943
+    ]
+  },
+  {
+    "name": "buru selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.09",
+    "coordinate": [
+      126.55282316205465,
+      -3.5696047796078934
+    ]
+  },
+  {
+    "name": "buru",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.04",
+    "coordinate": [
+      126.7212857616076,
+      -3.302938249913948
+    ]
+  },
+  {
+    "name": "maluku tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.03",
+    "coordinate": [
+      129.29145078976669,
+      -3.15935961450513
+    ]
+  },
+  {
+    "name": "seram bagian barat",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.06",
+    "coordinate": [
+      128.3534783472627,
+      -3.1334670484745395
+    ]
+  },
+  {
+    "name": "kepulauan aru",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.05",
+    "coordinate": [
+      134.45041130964,
+      -6.195864741098389
+    ]
+  },
+  {
+    "name": "maluku tenggara",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.02",
+    "coordinate": [
+      132.89035739088803,
+      -5.6747534900703505
+    ]
+  },
+  {
+    "name": "maluku tenggara barat",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.01",
+    "coordinate": [
+      131.3676494111649,
+      -7.584403147691332
+    ]
+  },
+  {
+    "name": "batam",
+    "kind": "KOTA",
+    "parent_id": "21",
+    "id": "21.71",
+    "coordinate": [
+      104.06368291414476,
+      0.9629033033976896
+    ]
+  },
+  {
+    "name": "padang panjang",
+    "kind": "KOTA",
+    "parent_id": "13",
+    "id": "13.74",
+    "coordinate": [
+      100.40371584069032,
+      -0.4711941603211506
+    ]
+  },
+  {
+    "name": "payakumbuh",
+    "kind": "KOTA",
+    "parent_id": "13",
+    "id": "13.76",
+    "coordinate": [
+      100.6309807699463,
+      -0.22607155738819829
+    ]
+  },
+  {
+    "name": "padang",
+    "kind": "KOTA",
+    "parent_id": "13",
+    "id": "13.71",
+    "coordinate": [
+      100.43535423891092,
+      -0.8957173463515159
+    ]
+  },
+  {
+    "name": "manokwari selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.11",
+    "coordinate": [
+      133.97208890787033,
+      -1.5941773593701323
+    ]
+  },
+  {
+    "name": "pariaman",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.77",
+    "coordinate": [
+      100.13721254427698,
+      -0.6076522235603811
+    ]
+  },
+  {
+    "name": "ogan ilir",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.10",
+    "coordinate": [
+      104.60090310645379,
+      -3.4099780449803165
+    ]
+  },
+  {
+    "name": "sawah lunto",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.73",
+    "coordinate": [
+      100.75703093350702,
+      -0.653771551512502
+    ]
+  },
+  {
+    "name": "indragiri hulu",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.02",
+    "coordinate": [
+      102.3275738728637,
+      -0.5331908104016332
+    ]
+  },
+  {
+    "name": "kuantan singingi",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.01",
+    "coordinate": [
+      101.50347826909078,
+      -0.4788217303672627
+    ]
+  },
+  {
+    "name": "rokan hulu",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.07",
+    "coordinate": [
+      100.47480607472052,
+      0.9400855493964936
+    ]
+  },
+  {
+    "name": "kampar",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.06",
+    "coordinate": [
+      101.07087975473338,
+      0.3271751644317158
+    ]
+  },
+  {
+    "name": "s i a k",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.05",
+    "coordinate": [
+      101.82489504385121,
+      0.826470762039137
+    ]
+  },
+  {
+    "name": "pelalawan",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.04",
+    "coordinate": [
+      102.26762386779073,
+      0.21942405427329595
+    ]
+  },
+  {
+    "name": "rokan hilir",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.09",
+    "coordinate": [
+      100.74504617183526,
+      1.773661927597575
+    ]
+  },
+  {
+    "name": "makassar",
+    "kind": "KOTA",
+    "parent_id": "73",
+    "id": "73.71",
+    "coordinate": [
+      119.46114662490858,
+      -5.1334175224247245
+    ]
+  },
+  {
+    "name": "pasaman barat",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.12",
+    "coordinate": [
+      99.67811641644775,
+      0.20695257243696014
+    ]
+  },
+  {
+    "name": "mamuju tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "76",
+    "id": "76.06",
+    "coordinate": [
+      119.51843699388908,
+      -2.0077679966756974
+    ]
+  },
+  {
+    "name": "mamuju utara",
+    "kind": "KABUPATEN",
+    "parent_id": "76",
+    "id": "76.05",
+    "coordinate": [
+      119.50720730171997,
+      -1.4856642912435023
+    ]
+  },
+  {
+    "name": "mamasa",
+    "kind": "KABUPATEN",
+    "parent_id": "76",
+    "id": "76.03",
+    "coordinate": [
+      119.3118921897374,
+      -2.94880472855077
+    ]
+  },
+  {
+    "name": "polewali mandar",
+    "kind": "KABUPATEN",
+    "parent_id": "76",
+    "id": "76.02",
+    "coordinate": [
+      119.14448123724303,
+      -3.311945670189802
+    ]
+  },
+  {
+    "name": "solok selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.10",
+    "coordinate": [
+      101.25257871163511,
+      -1.4063564532072919
+    ]
+  },
+  {
+    "name": "dharmasraya",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.11",
+    "coordinate": [
+      101.55419357052628,
+      -1.1309872177795561
+    ]
+  },
+  {
+    "name": "merangin",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.02",
+    "coordinate": [
+      102.06441910682584,
+      -2.1962009050596407
+    ]
+  },
+  {
+    "name": "sarolangun",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.03",
+    "coordinate": [
+      102.66456643782594,
+      -2.3091128226723816
+    ]
+  },
+  {
+    "name": "kerinci",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.01",
+    "coordinate": [
+      101.46942426509194,
+      -2.036906918983768
+    ]
+  },
+  {
+    "name": "tanjung jabung timur",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.06",
+    "coordinate": [
+      103.96735235742356,
+      -1.2198206357851036
+    ]
+  },
+  {
+    "name": "tanjung jabung barat",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.07",
+    "coordinate": [
+      103.11331076863112,
+      -1.071070051228324
+    ]
+  },
+  {
+    "name": "batang hari",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.04",
+    "coordinate": [
+      103.09606309968885,
+      -1.7497334151266641
+    ]
+  },
+  {
+    "name": "tebo",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.08",
+    "coordinate": [
+      102.36127541003162,
+      -1.3102003466924455
+    ]
+  },
+  {
+    "name": "bitung",
+    "kind": "KOTA",
+    "parent_id": "71",
+    "id": "71.72",
+    "coordinate": [
+      125.16143010992648,
+      1.4847766277397763
+    ]
+  },
+  {
+    "name": "tomohon",
+    "kind": "KOTA",
+    "parent_id": "71",
+    "id": "71.73",
+    "coordinate": [
+      124.81490007132207,
+      1.3243123040542923
+    ]
+  },
+  {
+    "name": "manado",
+    "kind": "KOTA",
+    "parent_id": "71",
+    "id": "71.71",
+    "coordinate": [
+      124.84855750906158,
+      1.5247075907210237
+    ]
+  },
+  {
+    "name": "mamberamo raya",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.28",
+    "coordinate": [
+      137.96906702466805,
+      -2.4896221795185527
+    ]
+  },
+  {
+    "name": "keerom",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.20",
+    "coordinate": [
+      140.68325996338473,
+      -3.332129716800144
+    ]
+  },
+  {
+    "name": "pidie jaya",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.18",
+    "coordinate": [
+      96.21353372859743,
+      5.124714377230411
+    ]
+  },
+  {
+    "name": "aceh jaya",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.16",
+    "coordinate": [
+      95.67870646507116,
+      4.832183515696214
+    ]
+  },
+  {
+    "name": "bener meriah",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.17",
+    "coordinate": [
+      97.00711806449318,
+      4.767314163240042
+    ]
+  },
+  {
+    "name": "aceh tamiang",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.14",
+    "coordinate": [
+      97.97688136435711,
+      4.227726445721813
+    ]
+  },
+  {
+    "name": "nagan raya",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.15",
+    "coordinate": [
+      96.50678151264452,
+      4.155410077771227
+    ]
+  },
+  {
+    "name": "aceh barat daya",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.12",
+    "coordinate": [
+      96.878320405798,
+      3.8248992327788547
+    ]
+  },
+  {
+    "name": "konawe utara",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.10",
+    "coordinate": [
+      121.99693091956325,
+      -3.385156067329069
+    ]
+  },
+  {
+    "name": "gayo lues",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.13",
+    "coordinate": [
+      97.35753014722229,
+      3.9819267625474715
+    ]
+  },
+  {
+    "name": "kotamobagu",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.74",
+    "coordinate": [
+      124.31906270846667,
+      0.7107967307694835
+    ]
+  },
+  {
+    "name": "konawe kepulauan",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.12",
+    "coordinate": [
+      123.09505440570479,
+      -4.114416020888703
+    ]
+  },
+  {
+    "name": "kolaka timur",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.11",
+    "coordinate": [
+      121.61223777007733,
+      -3.7953582569168676
+    ]
+  },
+  {
+    "name": "yahukimo",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.16",
+    "coordinate": [
+      139.6032507288079,
+      -4.489206428573972
+    ]
+  },
+  {
+    "name": "asmat",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.15",
+    "coordinate": [
+      138.56035088125492,
+      -5.369080266418427
+    ]
+  },
+  {
+    "name": "mappi",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.14",
+    "coordinate": [
+      139.39901440301915,
+      -6.495805863865718
+    ]
+  },
+  {
+    "name": "boven digoel",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.13",
+    "coordinate": [
+      140.36645183208964,
+      -5.987001231570591
+    ]
+  },
+  {
+    "name": "muna barat",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.13",
+    "coordinate": [
+      122.49314420226548,
+      -4.81747613059342
+    ]
+  },
+  {
+    "name": "buton tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.14",
+    "coordinate": [
+      122.39897447988095,
+      -5.316823814155722
+    ]
+  },
+  {
+    "name": "buton selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.15",
+    "coordinate": [
+      122.67729012459043,
+      -5.605820834993368
+    ]
+  },
+  {
+    "name": "sarmi",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.19",
+    "coordinate": [
+      139.0031673065953,
+      -2.4718782776904593
+    ]
+  },
+  {
+    "name": "pegunungan bintang",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.17",
+    "coordinate": [
+      140.5326951449231,
+      -4.517497232063009
+    ]
+  },
+  {
+    "name": "bireuen",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.10",
+    "coordinate": [
+      96.60626640784848,
+      5.0936605241308275
+    ]
+  },
+  {
+    "name": "aceh utara",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.11",
+    "coordinate": [
+      97.18200372246233,
+      5.014810787479303
+    ]
+  },
+  {
+    "name": "toraja utara",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.26",
+    "coordinate": [
+      119.86893380972349,
+      -2.888179566080564
+    ]
+  },
+  {
+    "name": "konawe",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.03",
+    "coordinate": [
+      121.8861578492635,
+      -3.5253941325910083
+    ]
+  },
+  {
+    "name": "mimika",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.12",
+    "coordinate": [
+      136.69388574115652,
+      -4.500496206014277
+    ]
+  },
+  {
+    "name": "wakatobi",
+    "kind": "KOTA",
+    "parent_id": "74",
+    "id": "74.07",
+    "coordinate": [
+      123.78490172170332,
+      -5.570735809718919
+    ]
+  },
+  {
+    "name": "muna",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.02",
+    "coordinate": [
+      122.63860036765001,
+      -4.939502128810595
+    ]
+  },
+  {
+    "name": "bombana",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.06",
+    "coordinate": [
+      121.85127589042047,
+      -4.797843712309978
+    ]
+  },
+  {
+    "name": "padang pariaman",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.06",
+    "coordinate": [
+      100.22770245153386,
+      -0.5623421087836579
+    ]
+  },
+  {
+    "name": "agam",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.07",
+    "coordinate": [
+      100.16851358526834,
+      -0.24942983610580546
+    ]
+  },
+  {
+    "name": "kolaka utara",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.08",
+    "coordinate": [
+      121.15192364456823,
+      -3.2454608867137704
+    ]
+  },
+  {
+    "name": "dairi",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.10",
+    "coordinate": [
+      98.26728832579506,
+      2.8436259577747998
+    ]
+  },
+  {
+    "name": "sintang",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.07",
+    "coordinate": [
+      112.07152404496702,
+      0.0926360171370988
+    ]
+  },
+  {
+    "name": "ketapang",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.06",
+    "coordinate": [
+      110.61387413497845,
+      -1.633223953246963
+    ]
+  },
+  {
+    "name": "sambas",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.01",
+    "coordinate": [
+      109.34638463981582,
+      1.4299699961454988
+    ]
+  },
+  {
+    "name": "karo",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.11",
+    "coordinate": [
+      98.29603228542923,
+      3.120679964416142
+    ]
+  },
+  {
+    "name": "dogiyai",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.34",
+    "coordinate": [
+      135.667599372296,
+      -4.016855391461551
+    ]
+  },
+  {
+    "name": "jeneponto",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.04",
+    "coordinate": [
+      119.69844695331595,
+      -5.567517269600793
+    ]
+  },
+  {
+    "name": "puncak",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.33",
+    "coordinate": [
+      137.40003235185242,
+      -3.6195417685537037
+    ]
+  },
+  {
+    "name": "takalar",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.05",
+    "coordinate": [
+      119.47055722028985,
+      -5.419755921293095
+    ]
+  },
+  {
+    "name": "bulukumba",
+    "kind": "KOTA",
+    "parent_id": "73",
+    "id": "73.02",
+    "coordinate": [
+      120.23600647762198,
+      -5.43246914945214
+    ]
+  },
+  {
+    "name": "karimun",
+    "kind": "KOTA",
+    "parent_id": "21",
+    "id": "21.01",
+    "coordinate": [
+      103.53091837546225,
+      0.8248069873618142
+    ]
+  },
+  {
+    "name": "bantaeng",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.03",
+    "coordinate": [
+      119.98691126381166,
+      -5.488189507256934
+    ]
+  },
+  {
+    "name": "maros",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.08",
+    "coordinate": [
+      119.72474920660649,
+      -5.000696209575173
+    ]
+  },
+  {
+    "name": "lubuklinggau",
+    "kind": "KOTA",
+    "parent_id": "16",
+    "id": "16.74",
+    "coordinate": [
+      102.87935818301928,
+      -3.263523992374214
+    ]
+  },
+  {
+    "name": "pagar alam",
+    "kind": "KOTA",
+    "parent_id": "16",
+    "id": "16.73",
+    "coordinate": [
+      103.26267368960396,
+      -4.109111605375692
+    ]
+  },
+  {
+    "name": "tarakan",
+    "kind": "KOTA",
+    "parent_id": "65",
+    "id": "65.71",
+    "coordinate": [
+      117.59951134725277,
+      3.3594056668757353
+    ]
+  },
+  {
+    "name": "Kota tegal",
+    "kind": "KOTA",
+    "parent_id": "33",
+    "id": "33.76",
+    "coordinate": [
+      109.11565798546332,
+      -6.86893504453138
+    ]
+  },
+  {
+    "name": "bengkulu",
+    "kind": "KOTA",
+    "parent_id": "17",
+    "id": "17.71",
+    "coordinate": [
+      102.31269079275619,
+      -3.827698012778713
+    ]
+  },
+  {
+    "name": "Kota semarang",
+    "kind": "KOTA",
+    "parent_id": "33",
+    "id": "33.74",
+    "coordinate": [
+      110.38964815162016,
+      -7.020507206481219
+    ]
+  },
+  {
+    "name": "lamandau",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.07",
+    "coordinate": [
+      111.40667880872986,
+      -1.801121246987283
+    ]
+  },
+  {
+    "name": "kotawaringin barat",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.01",
+    "coordinate": [
+      111.74686165534575,
+      -2.5456901566967662
+    ]
+  },
+  {
+    "name": "gianyar",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.04",
+    "coordinate": [
+      115.28755671794418,
+      -8.480494316581577
+    ]
+  },
+  {
+    "name": "aceh barat",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.07",
+    "coordinate": [
+      96.18545307845079,
+      4.456642928695523
+    ]
+  },
+  {
+    "name": "klungkung",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.05",
+    "coordinate": [
+      115.49350278101646,
+      -8.666549101536063
+    ]
+  },
+  {
+    "name": "aceh besar",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.08",
+    "coordinate": [
+      95.51560780841,
+      5.379938286490712
+    ]
+  },
+  {
+    "name": "tabanan",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.02",
+    "coordinate": [
+      115.07877749428972,
+      -8.428221660385299
+    ]
+  },
+  {
+    "name": "aceh timur",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.05",
+    "coordinate": [
+      97.62863899872434,
+      4.628775301904982
+    ]
+  },
+  {
+    "name": "Kota pekalongan",
+    "kind": "KOTA",
+    "parent_id": "33",
+    "id": "33.75",
+    "coordinate": [
+      109.67782063321445,
+      -6.893131822743388
+    ]
+  },
+  {
+    "name": "surakarta",
+    "kind": "KOTA",
+    "parent_id": "33",
+    "id": "33.72",
+    "coordinate": [
+      110.82338940311999,
+      -7.558081726485703
+    ]
+  },
+  {
+    "name": "salatiga",
+    "kind": "KOTA",
+    "parent_id": "33",
+    "id": "33.73",
+    "coordinate": [
+      110.49842743653666,
+      -7.338271496934279
+    ]
+  },
+  {
+    "name": "Kota magelang",
+    "kind": "KOTA",
+    "parent_id": "33",
+    "id": "33.71",
+    "coordinate": [
+      110.22013212695184,
+      -7.477142250927822
+    ]
+  },
+  {
+    "name": "depok",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.76",
+    "coordinate": [
+      106.81680804038915,
+      -6.396102153382673
+    ]
+  },
+  {
+    "name": "Kota bekasi",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.75",
+    "coordinate": [
+      106.97568222485644,
+      -6.280230917831527
+    ]
+  },
+  {
+    "name": "Kota cirebon",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.74",
+    "coordinate": [
+      108.55332908721563,
+      -6.741990685093972
+    ]
+  },
+  {
+    "name": "Kota bandung",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.73",
+    "coordinate": [
+      107.63660176635061,
+      -6.919135143148547
+    ]
+  },
+  {
+    "name": "Kota sukabumi",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.72",
+    "coordinate": [
+      106.92433209380695,
+      -6.939871776569897
+    ]
+  },
+  {
+    "name": "Kota bogor",
+    "kind": "KOTA",
+    "parent_id": "32",
+    "id": "32.71",
+    "coordinate": [
+      106.79956409748137,
+      -6.5934531099348686
+    ]
+  },
+  {
+    "name": "pekanbaru",
+    "kind": "KOTA",
+    "parent_id": "14",
+    "id": "14.71",
+    "coordinate": [
+      101.4644362651013,
+      0.5498895380469896
+    ]
+  },
+  {
+    "name": "dumai",
+    "kind": "KOTA",
+    "parent_id": "14",
+    "id": "14.73",
+    "coordinate": [
+      101.31165385237125,
+      1.797664953244735
+    ]
+  },
+  {
+    "name": "surabaya",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.78",
+    "coordinate": [
+      112.72380657180258,
+      -7.27507327898217
+    ]
+  },
+  {
+    "name": "Kota probolinggo",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.74",
+    "coordinate": [
+      113.20543219584152,
+      -7.774315320560575
+    ]
+  },
+  {
+    "name": "Kota pasuruan",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.75",
+    "coordinate": [
+      112.91006829045205,
+      -7.6496889207004575
+    ]
+  },
+  {
+    "name": "Kota mojokerto",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.76",
+    "coordinate": [
+      112.4374365783764,
+      -7.4713126494674835
+    ]
+  },
+  {
+    "name": "Kota madiun",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.77",
+    "coordinate": [
+      111.52817634816529,
+      -7.627983150133003
+    ]
+  },
+  {
+    "name": "Kota kediri",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.71",
+    "coordinate": [
+      112.01383782049116,
+      -7.82630507525972
+    ]
+  },
+  {
+    "name": "Kota blitar",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.72",
+    "coordinate": [
+      112.16699695476053,
+      -8.095024343931797
+    ]
+  },
+  {
+    "name": "Kota malang",
+    "kind": "KOTA",
+    "parent_id": "35",
+    "id": "35.73",
+    "coordinate": [
+      112.63637957697848,
+      -7.978964241757226
+    ]
+  },
+  {
+    "name": "jambi",
+    "kind": "KOTA",
+    "parent_id": "15",
+    "id": "15.71",
+    "coordinate": [
+      103.6002239933178,
+      -1.6170022313380814
+    ]
+  },
+  {
+    "name": "yogyakarta",
+    "kind": "KOTA",
+    "parent_id": "34",
+    "id": "34.71",
+    "coordinate": [
+      110.37435370324704,
+      -7.803291531840577
+    ]
+  },
+  {
+    "name": "medan",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.75",
+    "coordinate": [
+      98.66799791992217,
+      3.62772815326503
+    ]
+  },
+  {
+    "name": "tebing tinggi",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.74",
+    "coordinate": [
+      99.155708650488,
+      3.3283602470044356
+    ]
+  },
+  {
+    "name": "padangsidimpuan",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.77",
+    "coordinate": [
+      99.28079476366769,
+      1.3963120719905036
+    ]
+  },
+  {
+    "name": "binjai",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.76",
+    "coordinate": [
+      98.4887113699256,
+      3.5994921082052485
+    ]
+  },
+  {
+    "name": "langkat",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.13",
+    "coordinate": [
+      98.22034602353949,
+      3.7107408697288196
+    ]
+  },
+  {
+    "name": "deli serdang",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.12",
+    "coordinate": [
+      98.69435399682342,
+      3.480873170702097
+    ]
+  },
+  {
+    "name": "humbang hasundutan",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.15",
+    "coordinate": [
+      98.57243146207149,
+      2.2707262352075035
+    ]
+  },
+  {
+    "name": "balangan",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.11",
+    "coordinate": [
+      115.642169185481,
+      -2.3191394029198205
+    ]
+  },
+  {
+    "name": "manggarai",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.13",
+    "coordinate": [
+      120.4015221143692,
+      -8.569361127195823
+    ]
+  },
+  {
+    "name": "rote ndao",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.14",
+    "coordinate": [
+      123.12435737058269,
+      -10.726035367473935
+    ]
+  },
+  {
+    "name": "manggarai barat",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.15",
+    "coordinate": [
+      119.98892103148462,
+      -8.60254353794858
+    ]
+  },
+  {
+    "name": "sumba tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.16",
+    "coordinate": [
+      119.66562260897426,
+      -9.547713116860514
+    ]
+  },
+  {
+    "name": "sumba barat daya",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.17",
+    "coordinate": [
+      119.1800363698889,
+      -9.534243361918765
+    ]
+  },
+  {
+    "name": "nagekeo",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.18",
+    "coordinate": [
+      121.27301155313991,
+      -8.68870869436466
+    ]
+  },
+  {
+    "name": "manggarai timur",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.19",
+    "coordinate": [
+      120.69059403761665,
+      -8.571655043672363
+    ]
+  },
+  {
+    "name": "kutai barat",
+    "kind": "KABUPATEN",
+    "parent_id": "64",
+    "id": "64.02",
+    "coordinate": [
+      115.83378503923876,
+      -0.5059552405645151
+    ]
+  },
+  {
+    "name": "kutai timur",
+    "kind": "KABUPATEN",
+    "parent_id": "64",
+    "id": "64.04",
+    "coordinate": [
+      117.13841616895331,
+      0.957727348818627
+    ]
+  },
+  {
+    "name": "berau",
+    "kind": "KABUPATEN",
+    "parent_id": "64",
+    "id": "64.05",
+    "coordinate": [
+      117.30377884955692,
+      1.9283840714561307
+    ]
+  },
+  {
+    "name": "sikka",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.10",
+    "coordinate": [
+      122.30372147740813,
+      -8.60866208278944
+    ]
+  },
+  {
+    "name": "penajam paser utara",
+    "kind": "KABUPATEN",
+    "parent_id": "64",
+    "id": "64.09",
+    "coordinate": [
+      116.59675161818545,
+      -1.1569513312421988
+    ]
+  },
+  {
+    "name": "ende",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.11",
+    "coordinate": [
+      121.73413170282971,
+      -8.677239516066043
+    ]
+  },
+  {
+    "name": "paser",
+    "kind": "KABUPATEN",
+    "parent_id": "64",
+    "id": "64.01",
+    "coordinate": [
+      116.09352575662373,
+      -1.733262411970014
+    ]
+  },
+  {
+    "name": "sumba timur",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.02",
+    "coordinate": [
+      120.25496774427293,
+      -9.877298175079776
+    ]
+  },
+  {
+    "name": "kupang",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.03",
+    "coordinate": [
+      123.85995684914131,
+      -9.918213568231984
+    ]
+  },
+  {
+    "name": "timor tengah selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.04",
+    "coordinate": [
+      124.3967496094009,
+      -9.827955927472686
+    ]
+  },
+  {
+    "name": "timor tengah utara",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.05",
+    "coordinate": [
+      124.56966764511523,
+      -9.377530167725832
+    ]
+  },
+  {
+    "name": "belu",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.06",
+    "coordinate": [
+      124.9684446353045,
+      -9.153849767991051
+    ]
+  },
+  {
+    "name": "alor",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.07",
+    "coordinate": [
+      124.56876268133456,
+      -8.303671585943405
+    ]
+  },
+  {
+    "name": "pangandaran",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.18",
+    "coordinate": [
+      108.5188496588861,
+      -7.635622132849623
+    ]
+  },
+  {
+    "name": "lembata",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.08",
+    "coordinate": [
+      123.54234419127023,
+      -8.380280743820396
+    ]
+  },
+  {
+    "name": "bandung barat",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.17",
+    "coordinate": [
+      107.41495279762519,
+      -6.8970559222616785
+    ]
+  },
+  {
+    "name": "flores timur",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.09",
+    "coordinate": [
+      122.94442294373864,
+      -8.365094374944873
+    ]
+  },
+  {
+    "name": "bekasi",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.16",
+    "coordinate": [
+      107.12065982672702,
+      -6.215388667080633
+    ]
+  },
+  {
+    "name": "karawang",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.15",
+    "coordinate": [
+      107.35422860031245,
+      -6.252023449519128
+    ]
+  },
+  {
+    "name": "purwakarta",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.14",
+    "coordinate": [
+      107.43220945742556,
+      -6.59501624488538
+    ]
+  },
+  {
+    "name": "subang",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.13",
+    "coordinate": [
+      107.73224596332203,
+      -6.48303649822703
+    ]
+  },
+  {
+    "name": "indramayu",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.12",
+    "coordinate": [
+      108.16859129774492,
+      -6.4487883102037795
+    ]
+  },
+  {
+    "name": "sumba barat",
+    "kind": "KABUPATEN",
+    "parent_id": "53",
+    "id": "53.01",
+    "coordinate": [
+      119.37971397398562,
+      -9.642180736283004
+    ]
+  },
+  {
+    "name": "mahakam hulu",
+    "kind": "KABUPATEN",
+    "parent_id": "64",
+    "id": "64.11",
+    "coordinate": [
+      114.87159704796728,
+      0.7193699617649679
+    ]
+  },
+  {
+    "name": "sumedang",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.11",
+    "coordinate": [
+      107.98085001471811,
+      -6.825065807080888
+    ]
+  },
+  {
+    "name": "majalengka",
+    "kind": "KABUPATEN",
+    "parent_id": "32",
+    "id": "32.10",
+    "coordinate": [
+      108.25781162113023,
+      -6.815865347033634
+    ]
+  },
+  {
+    "name": "Kota gorontalo",
+    "kind": "KOTA",
+    "parent_id": "75",
+    "id": "75.71",
+    "coordinate": [
+      123.0557940873117,
+      0.539453803230476
+    ]
+  },
+  {
+    "name": "kutai kartanegara",
+    "kind": "KOTA",
+    "parent_id": "64",
+    "id": "64.03",
+    "coordinate": [
+      116.51267132104468,
+      0.08674087675848635
+    ]
+  },
+  {
+    "name": "ngada",
+    "kind": "KOTA",
+    "parent_id": "53",
+    "id": "53.12",
+    "coordinate": [
+      121.00118189443333,
+      -8.667527040538827
+    ]
+  },
+  {
+    "name": "singkawang",
+    "kind": "KOTA",
+    "parent_id": "61",
+    "id": "61.72",
+    "coordinate": [
+      109.03489231710888,
+      0.8985243062895408
+    ]
+  },
+  {
+    "name": "pontianak",
+    "kind": "KOTA",
+    "parent_id": "61",
+    "id": "61.71",
+    "coordinate": [
+      109.33141032413221,
+      -0.025224691249643952
+    ]
+  },
+  {
+    "name": "purworejo",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.06",
+    "coordinate": [
+      109.96603736284713,
+      -7.699577249397467
+    ]
+  },
+  {
+    "name": "purbalingga",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.03",
+    "coordinate": [
+      109.40731824868422,
+      -7.322916341440347
+    ]
+  },
+  {
+    "name": "banjarnegara",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.04",
+    "coordinate": [
+      109.65741927361567,
+      -7.3518818624911155
+    ]
+  },
+  {
+    "name": "cilacap",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.01",
+    "coordinate": [
+      108.89041274497431,
+      -7.490962880796349
+    ]
+  },
+  {
+    "name": "banyumas",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.02",
+    "coordinate": [
+      109.17557990044277,
+      -7.455145169160513
+    ]
+  },
+  {
+    "name": "boyolali",
+    "kind": "KABUPATEN",
+    "parent_id": "33",
+    "id": "33.09",
+    "coordinate": [
+      110.65065639102616,
+      -7.418562111893324
+    ]
+  },
+  {
+    "name": "sampang",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.27",
+    "coordinate": [
+      113.2562666313279,
+      -7.051983781394837
+    ]
+  },
+  {
+    "name": "tangerang",
+    "kind": "KABUPATEN",
+    "parent_id": "36",
+    "id": "36.03",
+    "coordinate": [
+      106.51851281546423,
+      -6.174631025141093
+    ]
+  },
+  {
+    "name": "pamekasan",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.28",
+    "coordinate": [
+      113.50391465486926,
+      -7.065107563119698
+    ]
+  },
+  {
+    "name": "lebak",
+    "kind": "KABUPATEN",
+    "parent_id": "36",
+    "id": "36.02",
+    "coordinate": [
+      106.2128536041565,
+      -6.6421288977592186
+    ]
+  },
+  {
+    "name": "sumenep",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.29",
+    "coordinate": [
+      114.40501115846793,
+      -6.966833643242886
+    ]
+  },
+  {
+    "name": "sidoarjo",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.15",
+    "coordinate": [
+      112.70135729199403,
+      -7.452054653575475
+    ]
+  },
+  {
+    "name": "banyuwangi",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.10",
+    "coordinate": [
+      114.20552403240332,
+      -8.364926509919428
+    ]
+  },
+  {
+    "name": "bondowoso",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.11",
+    "coordinate": [
+      113.94755053796617,
+      -7.944023450660772
+    ]
+  },
+  {
+    "name": "morowali utara",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.12",
+    "coordinate": [
+      121.38496697089334,
+      -1.8145576352621782
+    ]
+  },
+  {
+    "name": "banggai laut",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.11",
+    "coordinate": [
+      123.53460661664307,
+      -1.788851210760738
+    ]
+  },
+  {
+    "name": "sigi",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.10",
+    "coordinate": [
+      119.9704412735048,
+      -1.4084883286353014
+    ]
+  },
+  {
+    "name": "blitar",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.05",
+    "coordinate": [
+      112.23812949800052,
+      -8.130108965745505
+    ]
+  },
+  {
+    "name": "kediri",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.06",
+    "coordinate": [
+      112.0896360323018,
+      -7.828871405183019
+    ]
+  },
+  {
+    "name": "malang",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.07",
+    "coordinate": [
+      112.64107526875492,
+      -8.12685702141849
+    ]
+  },
+  {
+    "name": "lumajang",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.08",
+    "coordinate": [
+      113.13757459644938,
+      -8.125300932695724
+    ]
+  },
+  {
+    "name": "pacitan",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.01",
+    "coordinate": [
+      111.17903267064129,
+      -8.12621755660518
+    ]
+  },
+  {
+    "name": "ponorogo",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.02",
+    "coordinate": [
+      111.49936587125327,
+      -7.931320198613304
+    ]
+  },
+  {
+    "name": "trenggalek",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.03",
+    "coordinate": [
+      111.6262705715467,
+      -8.161920880466246
+    ]
+  },
+  {
+    "name": "tulungagung",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.04",
+    "coordinate": [
+      111.88720198552332,
+      -8.113254929682997
+    ]
+  },
+  {
+    "name": "pesawaran",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.09",
+    "coordinate": [
+      105.11021857382065,
+      -5.4734903764638725
+    ]
+  },
+  {
+    "name": "tulangbawang",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.08",
+    "coordinate": [
+      105.53193818493916,
+      -4.372762207493515
+    ]
+  },
+  {
+    "name": "jember",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.09",
+    "coordinate": [
+      113.6556952256056,
+      -8.235978532611417
+    ]
+  },
+  {
+    "name": "way kanan",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.07",
+    "coordinate": [
+      104.6144902021952,
+      -4.516452292041957
+    ]
+  },
+  {
+    "name": "lampung utara",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.06",
+    "coordinate": [
+      104.80589364480635,
+      -4.8092384431832285
+    ]
+  },
+  {
+    "name": "lampung tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.05",
+    "coordinate": [
+      105.26464893223806,
+      -4.861296013419004
+    ]
+  },
+  {
+    "name": "lampung timur",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.04",
+    "coordinate": [
+      105.64903677573534,
+      -5.136651321725987
+    ]
+  },
+  {
+    "name": "lampung barat",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.01",
+    "coordinate": [
+      104.19028962790756,
+      -5.031743051694226
+    ]
+  },
+  {
+    "name": "morowali",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.03",
+    "coordinate": [
+      121.9135836479908,
+      -2.6938582941217173
+    ]
+  },
+  {
+    "name": "banggai",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.02",
+    "coordinate": [
+      122.58364287686872,
+      -1.0208282969033633
+    ]
+  },
+  {
+    "name": "palangka raya",
+    "kind": "KOTA",
+    "parent_id": "62",
+    "id": "62.71",
+    "coordinate": [
+      113.76907101235136,
+      -2.0184572891834542
+    ]
+  },
+  {
+    "name": "samarinda",
+    "kind": "KOTA",
+    "parent_id": "64",
+    "id": "64.72",
+    "coordinate": [
+      117.17870699176,
+      -0.5007247491556095
+    ]
+  },
+  {
+    "name": "bontang",
+    "kind": "KOTA",
+    "parent_id": "64",
+    "id": "64.74",
+    "coordinate": [
+      117.457152288814,
+      0.090731903644763
+    ]
+  },
+  {
+    "name": "palembang",
+    "kind": "KOTA",
+    "parent_id": "16",
+    "id": "16.71",
+    "coordinate": [
+      104.73281689101495,
+      -2.9733533795665945
+    ]
+  },
+  {
+    "name": "sibolga",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.71",
+    "coordinate": [
+      98.78590558082333,
+      1.7383643984612567
+    ]
+  },
+  {
+    "name": "pematang siantar",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.73",
+    "coordinate": [
+      99.05897438230838,
+      2.9625981493848546
+    ]
+  },
+  {
+    "name": "tanjung balai",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.72",
+    "coordinate": [
+      99.7949881539957,
+      2.9644158203705815
+    ]
+  },
+  {
+    "name": "tojo una-una",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.09",
+    "coordinate": [
+      121.57623484806803,
+      -1.1123702351416038
+    ]
+  },
+  {
+    "name": "parigi moutong",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.08",
+    "coordinate": [
+      120.45141149207917,
+      0.01664674549695773
+    ]
+  },
+  {
+    "name": "buol",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.07",
+    "coordinate": [
+      121.37277859445791,
+      0.9779760002180031
+    ]
+  },
+  {
+    "name": "toli-toli",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.06",
+    "coordinate": [
+      120.71892278169173,
+      0.9260107662158131
+    ]
+  },
+  {
+    "name": "banggai kepulauan",
+    "kind": "KABUPATEN",
+    "parent_id": "72",
+    "id": "72.01",
+    "coordinate": [
+      123.14378279605211,
+      -1.3722257899915933
+    ]
+  },
+  {
+    "name": "batu",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.79",
+    "coordinate": [
+      112.53112007482213,
+      -7.833108579964426
+    ]
+  },
+  {
+    "name": "jayapura",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.03",
+    "coordinate": [
+      139.97582362115529,
+      -2.9789029199008206
+    ]
+  },
+  {
+    "name": "nias selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.14",
+    "coordinate": [
+      98.1036062726109,
+      0.3204257337107345
+    ]
+  },
+  {
+    "name": "bone",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.11",
+    "coordinate": [
+      120.12958602956023,
+      -4.69481484734719
+    ]
+  },
+  {
+    "name": "soppeng",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.12",
+    "coordinate": [
+      119.89211089921348,
+      -4.339045562394473
+    ]
+  },
+  {
+    "name": "barru",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.10",
+    "coordinate": [
+      119.69414525650608,
+      -4.441677961384831
+    ]
+  },
+  {
+    "name": "sanggau",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.05",
+    "coordinate": [
+      110.43207628898402,
+      0.2686858146936255
+    ]
+  },
+  {
+    "name": "mempawah",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.04",
+    "coordinate": [
+      109.15602510113533,
+      0.3583355595219617
+    ]
+  },
+  {
+    "name": "landak",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.03",
+    "coordinate": [
+      109.77118035310221,
+      0.5165583831319005
+    ]
+  },
+  {
+    "name": "bengkayang",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.02",
+    "coordinate": [
+      109.56443917030644,
+      1.0120336700590884
+    ]
+  },
+  {
+    "name": "sekadau",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.09",
+    "coordinate": [
+      110.95131859744862,
+      -0.003879342928945301
+    ]
+  },
+  {
+    "name": "deiyai",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.36",
+    "coordinate": [
+      136.38461585803546,
+      -4.140289814301865
+    ]
+  },
+  {
+    "name": "kapuas hulu",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.08",
+    "coordinate": [
+      112.81087626085056,
+      0.8352382314849519
+    ]
+  },
+  {
+    "name": "intan jaya",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.35",
+    "coordinate": [
+      136.7448081289292,
+      -3.536386868461913
+    ]
+  },
+  {
+    "name": "bukittinggi",
+    "kind": "KOTA",
+    "parent_id": "13",
+    "id": "13.75",
+    "coordinate": [
+      100.37204225276035,
+      -0.30009877971169857
+    ]
+  },
+  {
+    "name": "minahasa selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.05",
+    "coordinate": [
+      124.5210498810898,
+      1.0845922163767825
+    ]
+  },
+  {
+    "name": "muara enim",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.03",
+    "coordinate": [
+      104.0015653037627,
+      -3.6358345183283323
+    ]
+  },
+  {
+    "name": "minahasa utara",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.06",
+    "coordinate": [
+      125.00805320496622,
+      1.5491394950005382
+    ]
+  },
+  {
+    "name": "ogan komering ilir",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.02",
+    "coordinate": [
+      105.39068094860515,
+      -3.3431730964111654
+    ]
+  },
+  {
+    "name": "musi rawas",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.05",
+    "coordinate": [
+      103.14522104901869,
+      -3.1667312804127796
+    ]
+  },
+  {
+    "name": "lahat",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.04",
+    "coordinate": [
+      103.3853248247582,
+      -3.8305581703956637
+    ]
+  },
+  {
+    "name": "bolaang mongondow",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.01",
+    "coordinate": [
+      124.04027358970225,
+      0.7079298624017354
+    ]
+  },
+  {
+    "name": "banyu asin",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.07",
+    "coordinate": [
+      104.66809332161915,
+      -2.4878697149829265
+    ]
+  },
+  {
+    "name": "minahasa",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.02",
+    "coordinate": [
+      124.8541691212074,
+      1.2546841290470698
+    ]
+  },
+  {
+    "name": "Kota solok",
+    "kind": "KOTA",
+    "parent_id": "13",
+    "id": "13.72",
+    "coordinate": [
+      100.63036505867335,
+      -0.7823509448598511
+    ]
+  },
+  {
+    "name": "indragiri hilir",
+    "kind": "KOTA",
+    "parent_id": "14",
+    "id": "14.03",
+    "coordinate": [
+      103.15731456100453,
+      -0.23330752608415506
+    ]
+  },
+  {
+    "name": "bengkalis",
+    "kind": "KOTA",
+    "parent_id": "14",
+    "id": "14.08",
+    "coordinate": [
+      101.66334527463586,
+      1.4060964749749925
+    ]
+  },
+  {
+    "name": "cilegon",
+    "kind": "KOTA",
+    "parent_id": "36",
+    "id": "36.72",
+    "coordinate": [
+      106.01927600264553,
+      -5.998046596903077
+    ]
+  },
+  {
+    "name": "palopo",
+    "kind": "KOTA",
+    "parent_id": "73",
+    "id": "73.73",
+    "coordinate": [
+      120.14788235704515,
+      -2.9804739685690307
+    ]
+  },
+  {
+    "name": "Kota tangerang",
+    "kind": "KOTA",
+    "parent_id": "36",
+    "id": "36.71",
+    "coordinate": [
+      106.65182277286547,
+      -6.182869412314524
+    ]
+  },
+  {
+    "name": "parepare",
+    "kind": "KOTA",
+    "parent_id": "73",
+    "id": "73.72",
+    "coordinate": [
+      119.66160200071873,
+      -4.029351438503021
+    ]
+  },
+  {
+    "name": "tangerang selatan",
+    "kind": "KOTA",
+    "parent_id": "36",
+    "id": "36.74",
+    "coordinate": [
+      106.70734068761357,
+      -6.301847797955843
+    ]
+  },
+  {
+    "name": "Kota serang",
+    "kind": "KOTA",
+    "parent_id": "36",
+    "id": "36.73",
+    "coordinate": [
+      106.16629873475823,
+      -6.123385996637228
+    ]
+  },
+  {
+    "name": "mamuju",
+    "kind": "KOTA",
+    "parent_id": "76",
+    "id": "76.04",
+    "coordinate": [
+      119.32496744251796,
+      -2.530675137503346
+    ]
+  },
+  {
+    "name": "majene",
+    "kind": "KOTA",
+    "parent_id": "76",
+    "id": "76.01",
+    "coordinate": [
+      118.9196813246818,
+      -3.1674166244415067
+    ]
+  },
+  {
+    "name": "palu",
+    "kind": "KOTA",
+    "parent_id": "72",
+    "id": "72.71",
+    "coordinate": [
+      119.9099740337284,
+      -0.8298023039411462
+    ]
+  },
+  {
+    "name": "Kota jayapura",
+    "kind": "KOTA",
+    "parent_id": "94",
+    "id": "94.71",
+    "coordinate": [
+      140.80889755357103,
+      -2.6593525190285123
+    ]
+  },
+  {
+    "name": "tapanuli tengah",
+    "kind": "KOTA",
+    "parent_id": "12",
+    "id": "12.04",
+    "coordinate": [
+      98.65973922880129,
+      1.8338991678730534
+    ]
+  },
+  {
+    "name": "Kota sorong",
+    "kind": "KOTA",
+    "parent_id": "91",
+    "id": "91.71",
+    "coordinate": [
+      131.3378378520826,
+      -0.8704767528273002
+    ]
+  },
+  {
+    "name": "buton utara",
+    "kind": "KOTA",
+    "parent_id": "74",
+    "id": "74.09",
+    "coordinate": [
+      123.01743793463577,
+      -4.695606555307764
+    ]
+  },
+  {
+    "name": "ternate",
+    "kind": "KOTA",
+    "parent_id": "82",
+    "id": "82.71",
+    "coordinate": [
+      127.17256886589237,
+      0.83883260333467
+    ]
+  },
+  {
+    "name": "katingan",
+    "kind": "KOTA",
+    "parent_id": "62",
+    "id": "62.09",
+    "coordinate": [
+      113.05983206409232,
+      -1.6998761999453902
+    ]
+  },
+  {
+    "name": "sukamara",
+    "kind": "KOTA",
+    "parent_id": "62",
+    "id": "62.06",
+    "coordinate": [
+      111.16090497341133,
+      -2.6230389762825914
+    ]
+  },
+  {
+    "name": "kepulauan seribu",
+    "kind": "KOTA",
+    "parent_id": "31",
+    "id": "31.01",
+    "coordinate": [
+      106.57935592481971,
+      -5.700150452115361
+    ]
+  },
+  {
+    "name": "jembrana",
+    "kind": "KOTA",
+    "parent_id": "51",
+    "id": "51.01",
+    "coordinate": [
+      114.68266506918766,
+      -8.312522825404608
+    ]
+  },
+  {
+    "name": "barito timur",
+    "kind": "KOTA",
+    "parent_id": "62",
+    "id": "62.12",
+    "coordinate": [
+      115.1596448155875,
+      -1.9781856601586347
+    ]
+  },
+  {
+    "name": "nias barat",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.25",
+    "coordinate": [
+      97.4896525742615,
+      1.0253665832952414
+    ]
+  },
+  {
+    "name": "hulu sungai utara",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.08",
+    "coordinate": [
+      115.15707581833142,
+      -2.442070174347805
+    ]
+  },
+  {
+    "name": "tanah laut",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.01",
+    "coordinate": [
+      114.90339043267018,
+      -3.818820582668558
+    ]
+  },
+  {
+    "name": "lombok timur",
+    "kind": "KABUPATEN",
+    "parent_id": "52",
+    "id": "52.03",
+    "coordinate": [
+      116.53066624403127,
+      -8.533116801373488
+    ]
+  },
+  {
+    "name": "tanah bumbu",
+    "kind": "KABUPATEN",
+    "parent_id": "63",
+    "id": "63.10",
+    "coordinate": [
+      115.6545662823669,
+      -3.447356580933397
+    ]
+  },
+  {
+    "name": "jayawijaya",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.02",
+    "coordinate": [
+      138.86933829229028,
+      -4.088256276360749
+    ]
+  },
+  {
+    "name": "biak numfor",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.09",
+    "coordinate": [
+      135.84431553935775,
+      -1.0039942475972168
+    ]
+  },
+  {
+    "name": "kepulauan yapen",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.08",
+    "coordinate": [
+      136.1741344997023,
+      -1.7456982074678922
+    ]
+  },
+  {
+    "name": "merauke",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.01",
+    "coordinate": [
+      139.70434030619685,
+      -7.840149438116505
+    ]
+  },
+  {
+    "name": "pesisir barat",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.13",
+    "coordinate": [
+      104.2053716492231,
+      -5.382741943251764
+    ]
+  },
+  {
+    "name": "tulang bawang barat",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.12",
+    "coordinate": [
+      105.09205815509682,
+      -4.42481855999793
+    ]
+  },
+  {
+    "name": "mesuji",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.11",
+    "coordinate": [
+      105.37787499148128,
+      -4.023735405449529
+    ]
+  },
+  {
+    "name": "pringsewu",
+    "kind": "KABUPATEN",
+    "parent_id": "18",
+    "id": "18.10",
+    "coordinate": [
+      104.92001544488448,
+      -5.330845228684619
+    ]
+  },
+  {
+    "name": "sungai penuh",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.72",
+    "coordinate": [
+      101.3411129316615,
+      -2.1133512462511486
+    ]
+  },
+  {
+    "name": "belitung",
+    "kind": "KABUPATEN",
+    "parent_id": "19",
+    "id": "19.02",
+    "coordinate": [
+      107.71103163627856,
+      -2.8699457108561277
+    ]
+  },
+  {
+    "name": "minahasa tenggara",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.09",
+    "coordinate": [
+      124.72189641833553,
+      1.0102840739617698
+    ]
+  },
+  {
+    "name": "kepulauan sangihe",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.03",
+    "coordinate": [
+      125.54130454476224,
+      3.5506992323754796
+    ]
+  },
+  {
+    "name": "ogan komering ulu",
+    "kind": "KABUPATEN",
+    "parent_id": "16",
+    "id": "16.01",
+    "coordinate": [
+      104.09382966899007,
+      -4.100669952945022
+    ]
+  },
+  {
+    "name": "kepulauan talaud",
+    "kind": "KABUPATEN",
+    "parent_id": "71",
+    "id": "71.04",
+    "coordinate": [
+      126.78163365200386,
+      4.225649396960542
+    ]
+  },
+  {
+    "name": "pegunungan arfak",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.12",
+    "coordinate": [
+      133.73378413742356,
+      -1.1953436657023957
+    ]
+  },
+  {
+    "name": "sijunjung",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.04",
+    "coordinate": [
+      101.08951085471554,
+      -0.6840857808212731
+    ]
+  },
+  {
+    "name": "luwu utara",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.22",
+    "coordinate": [
+      120.16072601151087,
+      -2.3949458073624807
+    ]
+  },
+  {
+    "name": "buton",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.01",
+    "coordinate": [
+      122.92447840205509,
+      -5.312806916407886
+    ]
+  },
+  {
+    "name": "pasaman",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.09",
+    "coordinate": [
+      100.08276006036749,
+      0.38729210373799877
+    ]
+  },
+  {
+    "name": "tual",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.72",
+    "coordinate": [
+      132.46653343083784,
+      -5.553110598521306
+    ]
+  },
+  {
+    "name": "padang lawas utara",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.20",
+    "coordinate": [
+      99.75745192971412,
+      1.5932562319436763
+    ]
+  },
+  {
+    "name": "labuhan batu selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.22",
+    "coordinate": [
+      100.13053646857173,
+      1.8388740861663457
+    ]
+  },
+  {
+    "name": "padang lawas",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.21",
+    "coordinate": [
+      99.84412084835697,
+      1.1404035996692825
+    ]
+  },
+  {
+    "name": "pinrang",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.15",
+    "coordinate": [
+      119.59991644949245,
+      -3.622456837556999
+    ]
+  },
+  {
+    "name": "enrekang",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.16",
+    "coordinate": [
+      119.87202996162938,
+      -3.50372392515815
+    ]
+  },
+  {
+    "name": "wajo",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.13",
+    "coordinate": [
+      120.17100013389445,
+      -4.006537656012791
+    ]
+  },
+  {
+    "name": "sidenreng rappang",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.14",
+    "coordinate": [
+      119.97142670813678,
+      -3.807290295602775
+    ]
+  },
+  {
+    "name": "maybrat",
+    "kind": "KABUPATEN",
+    "parent_id": "91",
+    "id": "91.10",
+    "coordinate": [
+      132.37567881700673,
+      -1.3222482885523679
+    ]
+  },
+  {
+    "name": "muaro jambi",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.05",
+    "coordinate": [
+      103.74517946007876,
+      -1.6091819391381712
+    ]
+  },
+  {
+    "name": "bungo",
+    "kind": "KABUPATEN",
+    "parent_id": "15",
+    "id": "15.09",
+    "coordinate": [
+      101.93100144116842,
+      -1.59888599930873
+    ]
+  },
+  {
+    "name": "lhokseumawe",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.74",
+    "coordinate": [
+      97.11032428087411,
+      5.1643823533510576
+    ]
+  },
+  {
+    "name": "subulussalam",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.75",
+    "coordinate": [
+      97.93724071585447,
+      2.735614684952018
+    ]
+  },
+  {
+    "name": "gorontalo",
+    "kind": "KABUPATEN",
+    "parent_id": "75",
+    "id": "75.02",
+    "coordinate": [
+      122.710757856484,
+      0.6937947114948462
+    ]
+  },
+  {
+    "name": "sabang",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.72",
+    "coordinate": [
+      95.30560107058142,
+      5.837818034045792
+    ]
+  },
+  {
+    "name": "kepulauan meranti",
+    "kind": "KABUPATEN",
+    "parent_id": "14",
+    "id": "14.10",
+    "coordinate": [
+      102.65034619384998,
+      1.0028048501017792
+    ]
+  },
+  {
+    "name": "pohuwato",
+    "kind": "KABUPATEN",
+    "parent_id": "75",
+    "id": "75.03",
+    "coordinate": [
+      121.711037397954,
+      0.6881180507386218
+    ]
+  },
+  {
+    "name": "langsa",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.73",
+    "coordinate": [
+      97.98270891212248,
+      4.483649398121538
+    ]
+  },
+  {
+    "name": "bone bolango",
+    "kind": "KABUPATEN",
+    "parent_id": "75",
+    "id": "75.04",
+    "coordinate": [
+      123.2911430080235,
+      0.533130021622331
+    ]
+  },
+  {
+    "name": "gorontalo utara",
+    "kind": "KABUPATEN",
+    "parent_id": "75",
+    "id": "75.05",
+    "coordinate": [
+      122.66000389008893,
+      0.8860780315145347
+    ]
+  },
+  {
+    "name": "banda aceh",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.71",
+    "coordinate": [
+      95.32792891666901,
+      5.558258484703462
+    ]
+  },
+  {
+    "name": "toba samosir",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.06",
+    "coordinate": [
+      99.26420806942151,
+      2.379733976640335
+    ]
+  },
+  {
+    "name": "tapanuli utara",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.05",
+    "coordinate": [
+      99.06973805795366,
+      1.9897653348599185
+    ]
+  },
+  {
+    "name": "asahan",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.08",
+    "coordinate": [
+      99.56285619520405,
+      2.80253917638151
+    ]
+  },
+  {
+    "name": "labuhan batu",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.07",
+    "coordinate": [
+      100.05650104048891,
+      2.2793778061485064
+    ]
+  },
+  {
+    "name": "mandailing natal",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.02",
+    "coordinate": [
+      99.36943234412115,
+      0.7743690199908844
+    ]
+  },
+  {
+    "name": "nias",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.01",
+    "coordinate": [
+      97.72837211751911,
+      1.0659381877659124
+    ]
+  },
+  {
+    "name": "tapanuli selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.03",
+    "coordinate": [
+      99.25806494426054,
+      1.49275162074385
+    ]
+  },
+  {
+    "name": "boalemo",
+    "kind": "KABUPATEN",
+    "parent_id": "75",
+    "id": "75.01",
+    "coordinate": [
+      122.3258785567412,
+      0.6555991917435181
+    ]
+  },
+  {
+    "name": "tidore kepulauan",
+    "kind": "KABUPATEN",
+    "parent_id": "82",
+    "id": "82.72",
+    "coordinate": [
+      127.6736700480184,
+      0.4851919122316976
+    ]
+  },
+  {
+    "name": "simalungun",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.09",
+    "coordinate": [
+      99.0332349519481,
+      2.9770244738102254
+    ]
+  },
+  {
+    "name": "supiori",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.27",
+    "coordinate": [
+      135.56465545510608,
+      -0.7320931114583044
+    ]
+  },
+  {
+    "name": "waropen",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.26",
+    "coordinate": [
+      136.72818549922337,
+      -2.746968115959872
+    ]
+  },
+  {
+    "name": "samosir",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.17",
+    "coordinate": [
+      98.72129091276466,
+      2.558722201795752
+    ]
+  },
+  {
+    "name": "pakpak bharat",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.16",
+    "coordinate": [
+      98.24060470970079,
+      2.554177524714966
+    ]
+  },
+  {
+    "name": "luwu",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.17",
+    "coordinate": [
+      120.18254664786619,
+      -3.1985486570546913
+    ]
+  },
+  {
+    "name": "batu bara",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.19",
+    "coordinate": [
+      99.47562440675641,
+      3.234237907718487
+    ]
+  },
+  {
+    "name": "tana toraja",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.18",
+    "coordinate": [
+      119.71237536816795,
+      -3.108512494877733
+    ]
+  },
+  {
+    "name": "serdang bedagai",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.18",
+    "coordinate": [
+      99.05853852863324,
+      3.3671678333886117
+    ]
+  },
+  {
+    "name": "puncak jaya",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.11",
+    "coordinate": [
+      137.84375729405298,
+      -3.4602155649266955
+    ]
+  },
+  {
+    "name": "paniai",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.10",
+    "coordinate": [
+      136.492841196211,
+      -3.805199472011013
+    ]
+  },
+  {
+    "name": "konawe selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.05",
+    "coordinate": [
+      122.42083574313355,
+      -4.262652099538152
+    ]
+  },
+  {
+    "name": "luwu timur",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.25",
+    "coordinate": [
+      121.13851858152984,
+      -2.5506782026175734
+    ]
+  },
+  {
+    "name": "kolaka",
+    "kind": "KABUPATEN",
+    "parent_id": "74",
+    "id": "74.04",
+    "coordinate": [
+      121.52935641019393,
+      -4.074941360047716
+    ]
+  },
+  {
+    "name": "tanah datar",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.05",
+    "coordinate": [
+      100.58604733543895,
+      -0.46053825048179275
+    ]
+  },
+  {
+    "name": "lima puluh kota",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.08",
+    "coordinate": [
+      100.56592294014345,
+      0.029782301692905248
+    ]
+  },
+  {
+    "name": "nias utara",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.24",
+    "coordinate": [
+      97.35547737756826,
+      1.3127821324189266
+    ]
+  },
+  {
+    "name": "kepulauan mentawai",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.01",
+    "coordinate": [
+      99.33852342986735,
+      -1.8514269084815056
+    ]
+  },
+  {
+    "name": "labuhan batu utara",
+    "kind": "KABUPATEN",
+    "parent_id": "12",
+    "id": "12.23",
+    "coordinate": [
+      99.75462530947867,
+      2.409104511719516
+    ]
+  },
+  {
+    "name": "pesisir selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.02",
+    "coordinate": [
+      100.88070231091959,
+      -1.738282544085887
+    ]
+  },
+  {
+    "name": "solok",
+    "kind": "KABUPATEN",
+    "parent_id": "13",
+    "id": "13.03",
+    "coordinate": [
+      100.81872084517039,
+      -0.9624251152420016
+    ]
+  },
+  {
+    "name": "yalimo",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.32",
+    "coordinate": [
+      139.45859218417573,
+      -3.813878970078221
+    ]
+  },
+  {
+    "name": "mamberamo tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.31",
+    "coordinate": [
+      139.0276646152684,
+      -3.6086341880745403
+    ]
+  },
+  {
+    "name": "pangkajene dan kepulauan",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.09",
+    "coordinate": [
+      119.47868433218483,
+      -4.939837244636624
+    ]
+  },
+  {
+    "name": "gowa",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.06",
+    "coordinate": [
+      119.71872704038856,
+      -5.309278916528733
+    ]
+  },
+  {
+    "name": "sinjai",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.07",
+    "coordinate": [
+      120.13586686341488,
+      -5.20974633193131
+    ]
+  },
+  {
+    "name": "kepulauan selayar",
+    "kind": "KABUPATEN",
+    "parent_id": "73",
+    "id": "73.01",
+    "coordinate": [
+      120.71525401332889,
+      -6.561885626100356
+    ]
+  },
+  {
+    "name": "ambon",
+    "kind": "KABUPATEN",
+    "parent_id": "81",
+    "id": "81.71",
+    "coordinate": [
+      128.17970459873584,
+      -3.677179782271715
+    ]
+  },
+  {
+    "name": "kubu raya",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.12",
+    "coordinate": [
+      109.53747422231513,
+      -0.38674078080091284
+    ]
+  },
+  {
+    "name": "kayong utara",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.11",
+    "coordinate": [
+      109.9251395144505,
+      -1.091862619210481
+    ]
+  },
+  {
+    "name": "melawi",
+    "kind": "KABUPATEN",
+    "parent_id": "61",
+    "id": "61.10",
+    "coordinate": [
+      111.72757711375091,
+      -0.6326354334101908
+    ]
+  },
+  {
+    "name": "kepulauan anambas",
+    "kind": "KABUPATEN",
+    "parent_id": "21",
+    "id": "21.05",
+    "coordinate": [
+      106.0652299134699,
+      3.0877656204577866
+    ]
+  },
+  {
+    "name": "lingga",
+    "kind": "KABUPATEN",
+    "parent_id": "21",
+    "id": "21.04",
+    "coordinate": [
+      104.5270902194036,
+      -0.22455513119453627
+    ]
+  },
+  {
+    "name": "natuna",
+    "kind": "KABUPATEN",
+    "parent_id": "21",
+    "id": "21.03",
+    "coordinate": [
+      108.26479870432523,
+      3.7859151714929014
+    ]
+  },
+  {
+    "name": "bintan",
+    "kind": "KABUPATEN",
+    "parent_id": "21",
+    "id": "21.02",
+    "coordinate": [
+      104.70326525965393,
+      1.011881202191669
+    ]
+  },
+  {
+    "name": "barito utara",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.05",
+    "coordinate": [
+      115.13473250155754,
+      -0.933064982124981
+    ]
+  },
+  {
+    "name": "kotawaringin timur",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.02",
+    "coordinate": [
+      112.71302991869997,
+      -2.064990152729028
+    ]
+  },
+  {
+    "name": "kapuas",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.03",
+    "coordinate": [
+      114.29802511990253,
+      -1.747850129546553
+    ]
+  },
+  {
+    "name": "seruyan",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.08",
+    "coordinate": [
+      112.17627054677024,
+      -2.2830100106447953
+    ]
+  },
+  {
+    "name": "barito selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.04",
+    "coordinate": [
+      114.92403679085375,
+      -1.8018650966737035
+    ]
+  },
+  {
+    "name": "badung",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.03",
+    "coordinate": [
+      115.18840530096382,
+      -8.583467602875695
+    ]
+  },
+  {
+    "name": "aceh tengah",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.06",
+    "coordinate": [
+      96.85903311409855,
+      4.529982969379809
+    ]
+  },
+  {
+    "name": "buleleng",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.08",
+    "coordinate": [
+      114.96257797945553,
+      -8.200235853303798
+    ]
+  },
+  {
+    "name": "aceh selatan",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.03",
+    "coordinate": [
+      97.43535111230099,
+      3.162864116894927
+    ]
+  },
+  {
+    "name": "aceh tenggara",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.04",
+    "coordinate": [
+      97.69553621869352,
+      3.3695883410774554
+    ]
+  },
+  {
+    "name": "bangli",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.06",
+    "coordinate": [
+      115.34684305109079,
+      -8.293590525411547
+    ]
+  },
+  {
+    "name": "simeulue",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.01",
+    "coordinate": [
+      96.08567681622827,
+      2.6133005357281682
+    ]
+  },
+  {
+    "name": "karang asem",
+    "kind": "KABUPATEN",
+    "parent_id": "51",
+    "id": "51.07",
+    "coordinate": [
+      115.53007047992541,
+      -8.374201061300246
+    ]
+  },
+  {
+    "name": "aceh singkil",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.02",
+    "coordinate": [
+      97.84708862094809,
+      2.3499328640636983
+    ]
+  },
+  {
+    "name": "murung raya",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.13",
+    "coordinate": [
+      114.27910124341646,
+      -0.030913825112204356
+    ]
+  },
+  {
+    "name": "pidie",
+    "kind": "KABUPATEN",
+    "parent_id": "11",
+    "id": "11.09",
+    "coordinate": [
+      96.00719605932727,
+      5.0682341790250565
+    ]
+  },
+  {
+    "name": "gunung mas",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.11",
+    "coordinate": [
+      113.53316184534319,
+      -1.0256667428285795
+    ]
+  },
+  {
+    "name": "pulang pisau",
+    "kind": "KABUPATEN",
+    "parent_id": "62",
+    "id": "62.10",
+    "coordinate": [
+      113.95521268783862,
+      -2.7160507665985074
+    ]
+  },
+  {
+    "name": "gresik",
+    "kind": "KABUPATEN",
+    "parent_id": "35",
+    "id": "35.25",
+    "coordinate": [
+      112.55814825953573,
+      -6.926870141890845
+    ]
+  },
+  {
+    "name": "nduga",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.29",
+    "coordinate": [
+      138.2404725764297,
+      -4.427393058611069
+    ]
+  },
+  {
+    "name": "tolikara",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.18",
+    "coordinate": [
+      138.40858681988715,
+      -3.483928051204076
+    ]
+  },
+  {
+    "name": "lanny jaya",
+    "kind": "KABUPATEN",
+    "parent_id": "94",
+    "id": "94.30",
+    "coordinate": [
+      138.2709824532561,
+      -3.985666860283507
+    ]
+  }
+]

@@ -2,8 +2,7 @@ require('dotenv').config({})
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const host = process.env.APP_HOST || 'localhost'
-const port = process.env.APP_PORT || 3000
+const theme = process.env.THEME || 'default'
 
 module.exports = {
   mode: 'development',
@@ -19,6 +18,17 @@ module.exports = {
     url: 'url',
   },
   devtool: 'source-map',
+  resolve: {
+    alias: {
+      MyHelpers: path.resolve(__dirname, '/src/helpers'),
+      MyModule: path.resolve(__dirname, '/src/modules/' + theme),
+      MyLayout: path.resolve(__dirname, '/src/layouts/' + theme),
+      MyTheme: path.resolve(__dirname, '/src/properties/assets/themes/' + theme),
+      MyThemeVendors: path.resolve(__dirname, '/src/properties/assets/themes/' + theme + '/assets/vendors'),
+      MyThemeImages: path.resolve(__dirname, '/src/properties/assets/themes/' + theme + '/assets/images'),
+      MyThemeCss: path.resolve(__dirname, '/src/properties/assets/themes/' + theme + '/assets/css'),
+    }
+  },
   optimization: {
     runtimeChunk: {
       name: 'runtime',
@@ -48,6 +58,7 @@ module.exports = {
   devServer: {
     hot: true,
     open: true,
+    liveReload: true,
     historyApiFallback: true
   },
   module: {
@@ -64,12 +75,19 @@ module.exports = {
           }
         ]
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ]
   },
   plugins: [
-      new HtmlWebpackPlugin({
-          template: './src/properties/assets/themes/default/template.html',
-      }),
-      new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/properties/assets/themes/' + theme + '/template.html',
+    }),
+    new webpack.DefinePlugin({
+      $THEME: JSON.stringify(theme)
+    }),
+    new webpack.HotModuleReplacementPlugin(),
   ]
 }

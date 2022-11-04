@@ -1,5 +1,5 @@
-import HomeRoutes from './home/home-routes'
-import AuthRoutes from './auth/auth-routes'
+import HomeRoutes from 'MyModule/home/home-routes'
+import AuthRoutes from 'MyModule/auth/auth-routes'
 
 let routes = []
 
