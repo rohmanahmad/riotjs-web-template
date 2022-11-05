@@ -1,0 +1,101 @@
+<header-app>
+    <div class="br-header {lefside ? 'mg-t-50': ''}">
+        <div class="br-header-left">
+            <div class="navicon-left hidden-md-down">
+                <a onclick="{burgerClick}" id="btnLeftMenu" class="cursor-pointer tx-gray-600 hover-dark tx-18 color-blue-teal-r10">
+                    <i class="fa fa-navicon"></i>
+                </a>
+            </div>
+            <div class="navicon-left hidden-lg-up">
+                <a onclick="{showLeft}" id="btnLeftMenuMobile" class="cursor-pointer color-blue-teal-r10">
+                    <i class="fa fa-navicon"></i>
+                </a>
+            </div>
+
+            <div class="dropdown stay-open">
+                <span class="label hidden-md-down"> </span>
+                <a href="" aria-label="Select project" onclick="{ resetSearch }" class="btn btn-outline-primary  mg-t-10" data-toggle="dropdown">
+                    <i class="fa fa-plus"></i>
+                    <span class=" hidden-md-down">{ activeProjects.name }</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-header wd-250">
+                    <div class="form-group mg-5 has-search pd-r-5 pd-l-5 pd-t-5">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input
+                            name="search_project"
+                            ref="search_project"
+                            value="{searchText}"
+                            onkeyup="{searchProject}"
+                            class="form-control bg-input"
+                            placeholder="Search Project"
+                            type="text">
+                    </div>
+                    <ul class="list-unstyled user-profile-nav">
+                        <li>
+                            <a href="#{currentUrlStream}?project={ allProjectIds }" class="pd-5 see-more cursor-pointer">
+                                <i class="fa fa-checks"></i> 
+                                Select All
+                            </a>
+                        </li>
+                        <!-- <li each="{ recentProject }"> -->
+                            <!-- <a class="link" id="project-menu-{name.replace(/ /g, '_')}" onclick="{ toggleCheckSelectedProject }" project="{id}"> -->
+                                <!-- <i class="fa {checked ? 'fa-check-square-o' : ''} {!checked ? 'fa-square-o' : ''}"></i> { name } -->
+                            <!-- </a> -->
+                        <!-- </li> -->
+                        <li>
+                            { recentProject }
+                        </li>
+                        <li>
+                            <hr class="mg-5" />
+                            <button class="btn btn-outline-primary hg-30 pd-5 wd-60 mg-l-5" style="float: left;" onclick="{submitProjects}">Show</button>
+                            <a
+                                onclick="{ projectsetting }"
+                                class="no-hover-style pd-5 see-more cursor-pointer deleteformfilter"
+                                style="max-width: 60%;text-align: right;float: right;">
+                                See More
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <nav class="nav">
+            <div class="dropdown">
+                <a href="" class="nav-link nav-link-profile" data-toggle="dropdown" aria-label="Settings">
+                    <span class="logged-name hidden-md-down">{name}</span>
+                    <img alt="" src="{avatar}" onError="{errorProfileImage}" class="wd-32 rounded-circle">
+                    <span class="square-10 bg-success"></span>
+                </a>
+                <div class="dropdown-menu pd-10 wd-200">
+                    <nav class="nav nav-style-1 flex-column">
+                        <a href="#setting/global-setting?project={localStorage.prjId}" class="nav-link">
+                            <i class="fa fa-wrench"></i>
+                            Profile Setting
+                        </a>
+                        <a href="#extras/download-tasks" class="nav-link">
+                            <i class="fa fa-cloud-download"></i>
+                            Background Tasks
+                        </a>
+                        <a href="#setting/filterlist?project={localStorage.prjId}" class="nav-link">
+                            <i class="fa fa-sort-amount-asc"></i>
+                            Filter List
+                        </a>
+                        <a href="#change-password?project={localStorage.prjId}" class="nav-link">
+                            <i class="fa fa-unlock-alt"></i>
+                            Change Password
+                        </a>
+                        <a href="#logout" class="nav-link mg-t-10 bd-t" style="color: red;">
+                            <i class="fa fa-sign-out"></i>
+                            Logout
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </nav> -->
+    </div>
+    <script>
+        import controller from './header'
+
+        export default controller
+    </script>
+</header-app>

@@ -3,6 +3,8 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const theme = process.env.THEME || 'default'
+const nodeEnv = process.env.NODE_ENV || 'development'
+const { name, version } = require('./package.json')
 
 module.exports = {
   mode: 'development',
@@ -20,6 +22,8 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     alias: {
+      packagejson: path.resolve(__dirname, 'package.json'),
+      MySDK: path.resolve(__dirname, '/src/modules/@sdk'),
       MyHelpers: path.resolve(__dirname, '/src/helpers'),
       MyModule: path.resolve(__dirname, '/src/modules/' + theme),
       MyLayout: path.resolve(__dirname, '/src/layouts/' + theme),
@@ -79,6 +83,16 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.svg/,
+        use: {
+          loader: "svg-url-loader",
+          options: {
+            // make all svg images to work in IE
+            iesafe: true,
+          },
+        },
+      },
     ]
   },
   plugins: [
@@ -86,7 +100,10 @@ module.exports = {
       template: './src/properties/assets/themes/' + theme + '/template.html',
     }),
     new webpack.DefinePlugin({
-      $THEME: JSON.stringify(theme)
+      APP_NAME: JSON.stringify(name),
+      APP_VERSION: JSON.stringify(version),
+      NODE_ENV: JSON.stringify(nodeEnv),
+      R10_API_URL: JSON.stringify(process.env.R10_API_URL),
     }),
     new webpack.HotModuleReplacementPlugin(),
   ]

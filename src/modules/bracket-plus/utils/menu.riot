@@ -1,0 +1,178 @@
+<menu>
+    <!-- ########## START: LEFT PANEL ########## -->
+    <!--  <div class="br-logo lifeside-bacground-limit" if="{lefside}">
+    </div>  -->
+    <div class="br-logo {lefside ? 'mg-t-50': ''}">
+        <a>
+            <img src="{ logo }" width="120" class="logo-img-mobile r10-xs-logo mg-t-min-4" alt="" />
+            <!--  <span class="tx-white" style="color:white; font-weight: 600;font-family: Roboto;">RIPPLE 10</span>  -->
+        </a>
+    </div>
+    <div class="br-sideleft overflow-y-auto {lefside ? 'mg-t-50' : ''} shadow-base" onmouseenter="{ expandMenu }" onmouseleave="{ collapseMenu }">
+        <ul class="br-sideleft-menu mg-t-10">
+            <li class="br-menu-item " if="{packageRest['summary']}">
+                <a href="#summary?project={projectId}" class="br-menu-link  {menuActive.summary}">
+                    <img src="assets/images/components/icons/summary-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-document-text tx-22"></i> -->
+                    <span class="menu-item-label">Summary</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <li class="br-menu-item " if="{packageRest['trendings']}">
+                <a onclick="{() => this.subTrendings = !this.subTrendings}" class="br-menu-link with-sub {subTrendings ? 'show-sub' : ''} {menuActive.trendings} cursor-pointer">
+                    <img src="assets/images/components/icons/trends.ico" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-pie-graph tx-22"></i> -->
+                    <span class="menu-item-label">Trendings</span>
+                </a>
+                <ul class="br-menu-sub {subTrendings ? 'd-block' : ''}">
+                    <li class="sub-item curisor-pointer">
+                        <a href="#trendings/twitter?project={projectId}&area=indonesia" 
+                           class="sub-link color-blueteal {menuActive['subTrendings.twitter.indonesia']}">Twitter [Indonesia]</a>
+                    </li>
+                    <li class="sub-item curisor-pointer">
+                        <a href="#trendings/twitter?project={projectId}&area=global" 
+                            class="sub-link color-blueteal {menuActive['subTrendings.twitter.global']}">Twitter [Global]</a>
+                    </li>
+                    <li class="sub-item cursor-pointer">
+                        <a href="#trendings/google-search?project={projectId}" 
+                            class="sub-link color-blueteal {menuActive['subTrendings.google.indonesia']}">Google [Indonesia]</a></li>
+                </ul>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item " if="{packageRest['mentions']}">
+                <a href="#mentions?project={projectId}" class="br-menu-link  {menuActive.mentions}">
+                    <img src="assets/images/components/icons/chat-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-chatbubbles tx-22"></i> -->
+                    <span class="menu-item-label">Mentions</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item " if="{packageRest['authors']}">
+                <a href="#authors?project={projectId}" class="br-menu-link  {menuActive.authors}">
+                    <img src="assets/images/components/icons/group-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-person-stalker tx-22"></i> -->
+                    <span class="menu-item-label">Authors</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item " if="{packageRest['analysis']}">
+                <a href="#analysis/my-stream?project={projectId}" class="br-menu-link {menuActive.mystream}">
+                    <img src="assets/images/components/icons/signal-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon fa fa-signal tx-22"></i> -->
+                    <span class="menu-item-label">Analysis</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item " if="{packageRest['comparison']}">
+                <a href="#comparison?project={projectId}" class="br-menu-link  {menuActive.competitiveness}">
+                    <img src="assets/images/components/icons/comparison-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon fa fa-clone tx-22"></i> -->
+                    <span class="menu-item-label">Comparison</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item " if="{this.BT}">
+                <a href="#buzzer-tracking-r10?project={projectId}" class="br-menu-link  {menuActive.buzz_tracking}">
+                    <img src="assets/images/components/icons/bullhorn-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon fa fa-bullhorn tx-22 "></i> -->
+                    <span class="menu-item-label">Buzzer Tracking</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item " if="{this.DH}">
+                <a href="#health-index-r10?project={projectId}" class="br-menu-link  {menuActive.dhi}">
+                    <img src="assets/images/components/icons/flash-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-flash tx-22"></i> -->
+                    <span class="menu-item-label">Digital Health Index</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+
+            <!--  <li class="br-menu-item " if="{packageRest['pr_dashboard']}">
+          <a href="#pr-dashboard?project={projectId}" class="br-menu-link  {menuActive.pr_dashboard}">
+            <i class="menu-item-icon fa fa-credit-card tx-22 "></i>
+            <span class="menu-item-label">PR Dashboard</span>
+          </a>
+        </li>  -->
+
+            <!--  <li class="br-menu-item cursor-pointer" if="{packageRest['infographic']}">
+          <a onclick="{infographicBrand}" class="br-menu-link ">
+            <i class="menu-item-icon icon ion-pie-graph tx-22"></i>
+            <span class="menu-item-label">Infographic </span>
+          </a>
+        </li>  -->
+
+            <li class="br-menu-item cursor-pointer" if="{packageRest['infographic']}">
+                <a onclick="{() => this.subInfographic = !this.subInfographic}" class="br-menu-link with-sub {subInfographic ? 'show-sub active' : ''}">
+                    <img src="assets/images/components/icons/pie-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-pie-graph tx-22"></i> -->
+                    <span class="menu-item-label">Infographic</span>
+                </a>
+                <ul class="br-menu-sub {subInfographic ? 'd-block' : ''}">
+                    <!-- <li class="sub-item curisor-pointer"><a onclick="{infographicBrand}" class="sub-link">My Brand</a></li> -->
+                    <!-- <li class="sub-item curisor-pointer"><a href="#infographic?project={projectId}" target="_blank" class="sub-link color-blueteal">My Brand</a></li> -->
+                    <li class="sub-item curisor-pointer"><a href="#infographic?project={projectId}" target="_blank" class="sub-link color-blueteal">My Brand</a></li>
+                    <li class="sub-item cursor-pointer"><a href="#competition/infographic?project={projectId}" target="_blank" class="sub-link" style="color:#17A2B8;">Competition</a></li>
+                </ul>
+            </li>
+            <li class="br-menu-item ">
+                <a href="#report/charts?project={projectId}" class="br-menu-link  {menuActive.donwloadcharts}">
+                    <img src="assets/images/components/icons/download-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-edit tx-22"></i> -->
+                    <span class="menu-item-label">Generate Charts</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <li class="br-menu-item " if="{packageRest['correction']}">
+                <a href="#correction?project={projectId}" class="br-menu-link  {menuActive.Correction}">
+                    <img src="assets/images/components/icons/edit-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon icon ion-edit tx-22"></i> -->
+                    <span class="menu-item-label">Correction</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <li class="br-menu-item " if="{packageRest['command_center']}">
+                <a href="https://commandcenter.ripple10.com/screen?token={AuthToken}" target="_blank" class="br-menu-link ">
+                    <img src="assets/images/components/icons/monitor-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon fa fa-desktop tx-22"></i> -->
+                    <span class="menu-item-label">Command Center</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item " if="{clientid != '431' || clientid != 431}">
+                <a href="#download?project={projectId}" class="br-menu-link {menuActive.download}">
+                    <img src="assets/images/components/icons/download-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon fa fa-download tx-22"></i> -->
+                    <span class="menu-item-label">Download</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+            <!-- br-menu-item  -->
+            <li class="br-menu-item mg-b-10" if="{packageRest['project_settings']}">
+                <a href="#setting/project-update?project={projectId}" class="br-menu-link  {menuActive.project_settings}">
+                    <img src="assets/images/components/icons/setting-baru.png" width="20" height="20" class="mg-l-min-5">
+                    <!-- <i class="menu-item-icon fa fa-sliders tx-22"></i> -->
+                    <span class="menu-item-label">Project Setting</span>
+                </a>
+                <!-- br-menu-link  -->
+            </li>
+
+        </ul>
+        <!-- br-sideleft-menu -->
+    </div>
+    <!-- ########## END: LEFT PANEL ########## -->
+
+    <script>
+        import controller from './menu'
+        export default controller
+    </script>
+
+</menu>
