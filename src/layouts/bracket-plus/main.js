@@ -8,8 +8,8 @@ import 'MyThemeCss/bracket.css'
 import 'MyThemeCss/ripple10-style.css'
 import 'MyThemeCss/sweetalert.min.css'
 
-import { jquery, menu, menuleft, maxStreams, urlStream } from 'MyHelpers/bracket-plus'
-import { p } from 'MyHelpers/utilities'
+import { menu, menuleft, maxStreams, urlStream } from 'MyHelpers/bracket-plus'
+import { jquery, p } from 'MyHelpers/utilities'
 
 export default {
     components,

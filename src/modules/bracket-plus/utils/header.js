@@ -1,13 +1,17 @@
 import {filter, map, orderBy, each} from 'lodash'
 
-import { jquery, menu, menuleft, urlStream } from 'MyHelpers/bracket-plus'
-import { p, logInfo, logError } from 'MyHelpers/utilities'
+import { menu, menuleft, urlStream, getProject, currentProject } from 'MyHelpers/bracket-plus'
+import { jquery, p } from 'MyHelpers/utilities'
+import { logInfo, logError } from 'MyHelpers/logs'
+import { myRestriction } from 'MySDK/auth-sdk'
+import { myProjects } from 'MySDK/projects-sdk'
+import { getStorage } from 'MyHelpers/storage'
+import noImage from 'MyThemeImages/components/icons/no-image.png'
 
 export default {
     onBeforeMount() {
-        debugger
-        this.avatar = localStorage.getItem('avatar') || '/assets/images/components/icons/no-image.png'
-        this.name = localStorage.getItem('name')
+        this.avatar = getStorage('avatar') || noImage
+        this.profileName = getStorage('name')
         this.lefside = false
         this.selectedProject = {
             name: 'Choose Project',
@@ -30,6 +34,7 @@ export default {
         this.maxRecent = 10
         this.projects = []
         this.allProjectIds = ''
+        this.myCurrentProject = currentProject()
     },
     onMounted() {
         this.project()
@@ -56,6 +61,9 @@ export default {
             this.update()
         })
     },
+    getNoImage(e) {
+        e.target.src = noImage
+    },
     toggleCheckSelectedProject(e) {
         e.item.checked = !e.item.checked
     },
@@ -71,18 +79,13 @@ export default {
         }
     },
     getavailableChannel() {
-        APP.apiGet({
-            path: 'auth/get-restriction',
-            data: {
-                'type': 'max_date'
-            },
-            success: (maximaldate) => {
+        myRestriction({ 'type': 'max_date' })
+            .then(dateRestriction => {
                 setTimeout(() => {
-                    localStorage.setItem('maxdate', maximaldate)
+                    localStorage.setItem('maxdate', dateRestriction)
                 }, 1000)
                 this.update()
-            }
-        })
+            })
     },
     resetSearch() {
         let isDDShown = !jquery('.br-header-left > .dropdown > .dropdown-menu.dropdown-menu-header').hasClass('show')
@@ -123,7 +126,7 @@ export default {
         let projectData = p('project') ? p('project') : ''
         let selectedProjects = []
         if (projectData) {
-            var prj = p('project') ? p('project') : APP.getProject().toString()
+            var prj = p('project') ? p('project') : getProject().toString()
             var defaultChecked = prj.split(",").map(Number)
             res = this.reArrangeRecent(res, defaultChecked)
             let xgropProject = filter(res, (val) => {
@@ -227,17 +230,14 @@ export default {
         var data = {
             selected_fields: 'key_id, key_name,key_start_date, key_color , key_id, key_is_buzzer_tracking, key_is_health_index, key_is_prdashboard ,key_is_cc'
         }
-        if (localStorage.getItem('projects') != null && localStorage.getItem('projects') != '') {
-            this.norequestProject(JSON.parse(localStorage.getItem('projects')))
+        if (getStorage('projects') != null && getStorage('projects') != '') {
+            this.norequestProject(JSON.parse(getStorage('projects')))
         } else {
-            APP.apiGet({
-                path: 'projects/list',
-                data: data,
-                success: (data) => {
-                    localStorage.setItem('projects', JSON.stringify(data))
-                    this.norequestProject(data)
-                }
-            })
+            myProjects(data)
+                .then(myProjects => {
+                    localStorage.setItem('projects', JSON.stringify(myProjects))
+                    this.norequestProject(myProjects)
+                })
         }
     },
     searchProject(e) {

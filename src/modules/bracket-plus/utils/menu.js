@@ -1,31 +1,66 @@
 import { result, find, each } from 'lodash'
-import { p } from 'MyHelpers/utilities'
+import { p, jquery } from 'MyHelpers/utilities'
+import { getClientProjects } from 'MySDK/projects-sdk'
+import { myRestriction } from 'MySDK/auth-sdk'
+import { getProject, Streams, MenuActive, urlStream, menu } from 'MyHelpers/bracket-plus'
+import { getStorage, changeStorage } from 'MyHelpers/storage'
+import { logInfo } from 'MyHelpers/logs'
+import Auth from 'MyHelpers/auth'
 
 import logoRipple10 from 'MyThemeImages/components/logos/ripple10.svg'
 
-import { getClientProjects } from 'MySDK/projects-sdk'
+import summaryIcon from 'MyThemeImages/components/icons/summary-baru.png'
+import trendIcon from 'MyThemeImages/components/icons/trends.ico'
+import mentionsIcon from 'MyThemeImages/components/icons/chat-baru.png'
+import authorsIcon from 'MyThemeImages/components/icons/group-baru.png'
+import analysisIcon from 'MyThemeImages/components/icons/signal-baru.png'
+import comparisonIcon from 'MyThemeImages/components/icons/comparison-baru.png'
+import buzzerIcon from 'MyThemeImages/components/icons/bullhorn-baru.png'
+import healthIcon from 'MyThemeImages/components/icons/flash-baru.png'
+import infographicIcon from 'MyThemeImages/components/icons/pie-baru.png'
+import reportIcon from 'MyThemeImages/components/icons/download-baru.png'
+import correctionIcon from 'MyThemeImages/components/icons/edit-baru.png'
+import httpsIcon from 'MyThemeImages/components/icons/monitor-baru.png'
+import downloadIcon from 'MyThemeImages/components/icons/download-baru.png'
+import settingIcon from 'MyThemeImages/components/icons/setting-baru.png'
 
-const APP = {}
 
 export default {
+    logos: {
+        logoRipple10,
+        // menu
+        summaryIcon,
+        trendIcon,
+        mentionsIcon,
+        authorsIcon,
+        analysisIcon,
+        comparisonIcon,
+        buzzerIcon,
+        healthIcon,
+        infographicIcon,
+        reportIcon,
+        correctionIcon,
+        httpsIcon,
+        downloadIcon,
+        settingIcon,
+    },
     onBeforeMount() {
-        this.logo = logoRipple10
-        this.AuthToken = localStorage.AuthToken || ''
-        this.clientid = localStorage.clientid || ''
+        this.AuthToken = getStorage('AuthToken' || '')
+        this.clientid = getStorage('clientid' || '')
         this.active = false
         this.active1 = false
         this.menuPermission
-        this.profileImage = localStorage.images
-        this.profileName = localStorage.name
+        this.profileImage = getStorage('images')
+        this.profileName = getStorage('name')
         this.permission
         this.lefside = false
         this.subTrendings = false
         this.subInfographic = false
         
-        this.PR = Number(localStorage.PR)
-        this.DH = Number(localStorage.DH)
-        this.BT = Number(localStorage.BT)
-        this.CC = Number(localStorage.CC)
+        this.PR = Number(getStorage('PR'))
+        this.DH = Number(getStorage('DH'))
+        this.BT = Number(getStorage('BT'))
+        this.CC = Number(getStorage('CC'))
         this.showAA = this.DH + this.BT
         
         this.packageRest = {}
@@ -64,17 +99,17 @@ export default {
     },
     onMounted() {
         this.getavailablekeyword()
-        this.UrlProject = p('project') ? p('project') : APP.getProject()
+        this.UrlProject = p('project') ? p('project') : getProject()
         
-        if(localStorage.Project_devault){
-            this.projectId = localStorage.Project_devault
+        if(getStorage('defaultProject')){
+            this.projectId = getStorage('defaultProject')
         } else {
             this.projectId = this.UrlProject
         }
-        localStorage.setItem('prj', this.UrlProject)
-        localStorage.setItem('prjId', this.projectId)
-        if (localStorage.maxdate) {
-            var maxStreams = localStorage.maxdate
+        changeStorage('prj', this.UrlProject)
+        changeStorage('prjId', this.projectId)
+        if (getStorage('maxdate')) {
+            var maxStreams = getStorage('maxdate')
         }
         if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
             this.lefside = true
@@ -86,8 +121,6 @@ export default {
             name: Auth.name,
         })
     
-        this.infographicBrand()
-        this.infographicCompetition()
         this.packageRestriction()
         this.listener()
     },
@@ -103,7 +136,7 @@ export default {
     },
     listenUpdateLeftside(){
         Streams.on('update-leftside', data => {
-            const UrlProject = p('project') ? p('project') : APP.getProject()
+            const UrlProject = p('project') ? p('project') : getProject()
             this.activePermission = find(data, {
                 'id': parseInt(UrlProject)
             })
@@ -113,17 +146,17 @@ export default {
                 this.DH = Number(this.activePermission.hi)
                 this.CC = Number(this.activePermission.cc)
                 this.showAA = this.DH + this.BT
-                localStorage.setItem('PR', this.PR)
-                localStorage.setItem('BT', this.BT)
-                localStorage.setItem('DH', this.DH)
-                localStorage.setItem('CC', this.CC)
+                changeStorage('PR', this.PR)
+                changeStorage('BT', this.BT)
+                changeStorage('DH', this.DH)
+                changeStorage('CC', this.CC)
                 this.update()
             }
             this.update()
         })
     },
     listenMenuActivated(){
-        menuActive.on('activated', (keys) => {
+        MenuActive.on('activated', (keys) => {
             each(keys, (key) => {
                 if (key === 'analysis' || key === 'advance_analysis') {
                     this.menuActive[key] = 'open'
@@ -168,7 +201,7 @@ export default {
     listenMenuImage() {
         menu.on('image', (data) => {
             this.profileImage = data
-            localStorage.setItem('images', this.profileImage)
+            changeStorage('images', this.profileImage)
         
             menu.trigger('fotoupdate', data)
             this.update()
@@ -177,14 +210,14 @@ export default {
     listenNamePprofile() {
         NameProfile.on('nameprofile', (data) => {
             this.profileName = data.fullname
-            localStorage.setItem('name', this.profileName)
+            changeStorage('name', this.profileName)
             this.update()
         })
     },
     collapseMenu(e){
-        if ($('body').hasClass('collapsed-menu') && $('#btnLeftMenu').is(':visible')) {
-            $('body').removeClass('expand-menu')
-            var menuText = $('.menu-item-label')
+        if (jquery('body').hasClass('collapsed-menu') && jquery('#btnLeftMenu').is(':visible')) {
+            jquery('body').removeClass('expand-menu')
+            var menuText = jquery('.menu-item-label')
             menuText.addClass('op-lg-0-force')
             menuText.addClass('d-lg-none')
         }
@@ -193,12 +226,12 @@ export default {
         this[k] = !this[k]
     },
     expandMenu(e) {
-        if ($('body').hasClass('collapsed-menu') && $('#btnLeftMenu').is(':visible')) {
-            $('body').addClass('expand-menu')
+        if (jquery('body').hasClass('collapsed-menu') && jquery('#btnLeftMenu').is(':visible')) {
+            jquery('body').addClass('expand-menu')
             // show current shown sub menu that was hidden from collapsed
-            //$('.show-sub + .br-menu-sub').slideDown()
+            //jquery('.show-sub + .br-menu-sub').slideDown()
     
-            let menuText = $('.menu-item-label')
+            let menuText = jquery('.menu-item-label')
             menuText.removeClass('d-lg-none')
             menuText.removeClass('op-lg-0-force')
         }
@@ -208,12 +241,12 @@ export default {
         if (url == "#analysis/my-stream?project=") {
             var projects = this.projectId
             if (!projects) {
-                var projects = APP.getProject()
+                var projects = getProject()
             }
         } else {
             var projects = this.UrlProject
             if (!projects) {
-                var projects = APP.getProject()
+                var projects = getProject()
             }
         }
         if (p('filter')) {
@@ -225,33 +258,25 @@ export default {
         this.update()
     },
     getavailablekeyword() {
-        APP.apiGet({
-            path: 'auth/get-restriction',
-            data: {
-                'type': 'menu'
-            },
-            success: function(maxmenu) {
-                // this.packageRestriction(maxmenu)
-                if (!localStorage.getItem('menu')) {
-                    localStorage.setItem('menu', maxmenu)
-                } else {
-                    localStorage.menu = maxmenu
+        myRestriction({ 'type': 'menu' })
+            .then((myMenu) => {
+                if (!getStorage('menu')) {
+                    changeStorage('menu', myMenu)
                 }
-                this.maxkeyword = maxmenu
+                this.maxkeyword = myMenu
                 this.update()
-            }.bind(this)
-        })
+            })
     },
     packageRestriction() {
-        //console.log('--',JSON.parse(localStorage.getItem('package')).menu)
-        //var menuPackage = JSON.parse(localStorage.getItem('package')).menu
-        //if(localStorage.menu){
-        if (localStorage.menu) {
-            var menuPackage = localStorage.menu.split(',')
+        //console.log('--',JSON.parse(getStorage('package')).menu)
+        //var menuPackage = JSON.parse(getStorage('package')).menu
+        //if(getStorage('menu')){
+        if (getStorage('menu')) {
+            var menuPackage = getStorage('menu').split(',')
     
         } else {
-            if (JSON.parse(localStorage.getItem('package'))) {
-                var menuPackage = JSON.parse(localStorage.getItem('package')).menu
+            if (JSON.parse(getStorage('package'))) {
+                var menuPackage = JSON.parse(getStorage('package')).menu
             }
         }
         // console.log('menuPackage', menuPackage)
@@ -301,12 +326,12 @@ export default {
         }
         this.update()
     },
-    async infographicBrand() {
-        var prj = p('project') ? p('project') : APP.getProject()
-        var sdate = localStorage.since
-        var ndate = localStorage.until
-        var userid = localStorage.userid
-        var url = APP.appInfographicBrandUrl
+    /* async infographicBrand() {
+        var prj = p('project') ? p('project') : getProject()
+        var sdate = getStorage('since')
+        var ndate = getStorage('until')
+        var userid = getStorage('userid')
+        var url = INFOGRAPHIC_BRAND_URL
         var data = {
             project: prj,
             selected_fields: 'key_id, temporary_token'
@@ -317,93 +342,77 @@ export default {
             .replace('<ndate>', ndate)
             .replace('<userid>', userid)
             .replace('<tmp_token>', response.temporary_token)
-        this.urlInfographic = (urlval + '&AuthToken=' + localStorage.AuthToken)
+        this.urlInfographic = (urlval + '&AuthToken=' + getStorage('AuthToken'))
         // this.update()
-    },
-    infographicCompetition() {
-        var prj = p('project') ? p('project') : APP.getProject()
-        var sdate = localStorage.since
-        var ndate = localStorage.until
-        var userid = localStorage.userid
-        var url = APP.appInfographicUrl
+    }, */
+    /* infographicCompetition() {
+        var prj = p('project') ? p('project') : getProject()
+        var sdate = getStorage('since')
+        var ndate = getStorage('until')
+        var userid = getStorage('userid')
+        var url = INFOGRAPHIC_COMPETITION_URL
         var data = {
             project: prj,
             selected_fields: 'key_id, temporary_token'
         }
-        APP.apiGet({
-            path: 'projects',
-            data: data,
-            success: (res) => {
+        getClientProjects(data)
+            .then(res => {
                 res = result(res, '[0]', {})
                 let urlval = url.replace('<project>', prj)
                     .replace('<sdate>', sdate)
                     .replace('<ndate>', ndate)
                     .replace('<userid>', userid)
                     .replace('<tmp_token>', res.temporary_token)
-                this.urlInfographicCompetition = (urlval + '&AuthToken=' + localStorage.AuthToken)
+                this.urlInfographicCompetition = (urlval + '&AuthToken=' + getStorage('AuthToken'))
                 this.update()
-    
-                // window.open(url + '&AuthToken=' + localStorage.AuthToken)
-            }
-        })
-    },
+            })
+    }, */
     commandCenter() {
-        var prj = p('project') ? p('project') : APP.getProject()
+        var prj = p('project') ? p('project') : getProject()
         var data = {
             project: prj,
             selected_fields: 'key_id, temporary_token'
         }
-        APP.apiGet({
-            path: 'projects',
-            data: data,
-            success: function(res) {
+        getClientProjects(data)
+            .then(res => {
                 each(res, (x) => {
-                    const url = APP.appCCUrl.replace('<prj>', x.key_id)
+                    const url = COMMAND_CENTER_URL.replace('<prj>', x.key_id)
                         .replace('<no>', 1)
                         .replace('<tmp_token>', x.temporary_token)
                     window.open(url)
                 })
-            }.bind(this)
-        })
-    
+            })
     },
     commandCenter1() {
-        var prj = p('project') ? p('project') : APP.getProject()
+        var prj = p('project') ? p('project') : getProject()
         var data = {
             project: prj,
             selected_fields: 'key_id, temporary_token'
         }
-        APP.apiGet({
-            path: 'projects',
-            data: data,
-            success: function(res) {
+        getClientProjects(data)
+            .then(res => {
                 each(res, (x) => {
-                    const url = APP.appCCUrl.replace('<prj>', x.key_id)
+                    const url = COMMAND_CENTER_URL.replace('<prj>', x.key_id)
                         .replace('<no>', 2)
                         .replace('<tmp_token>', x.temporary_token)
                     window.open(url)
                 })
-            }.bind(this)
-        })
-    
+            })
     },
     commandCenter2() {
-        var prj = p('project') ? p('project') : APP.getProject()
+        var prj = p('project') ? p('project') : getProject()
         var data = {
             project: prj,
             selected_fields: 'key_id, temporary_token'
         }
-        APP.apiGet({
-            path: 'projects',
-            data: data,
-            success: function(res) {
+        getClientProjects(data)
+            .then(res => {
                 each(res, (x) => {
-                    const url = APP.appCCUrl.replace('<prj>', x.key_id)
+                    const url = COMMAND_CENTER_URL.replace('<prj>', x.key_id)
                         .replace('<no>', 3)
                         .replace('<tmp_token>', x.temporary_token)
                     window.open(url)
                 })
-            }.bind(this)
-        })
+            })
     }
 }

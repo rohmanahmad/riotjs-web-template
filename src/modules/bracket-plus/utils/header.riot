@@ -38,8 +38,8 @@
                             </a>
                         </li>
                         <!-- <li each="{ recentProject }"> -->
-                            <!-- <a class="link" id="project-menu-{name.replace(/ /g, '_')}" onclick="{ toggleCheckSelectedProject }" project="{id}"> -->
-                                <!-- <i class="fa {checked ? 'fa-check-square-o' : ''} {!checked ? 'fa-square-o' : ''}"></i> { name } -->
+                            <!-- <a class="link" id="project-menu-{profileName.replace(/ /g, '_')}" onclick="{ toggleCheckSelectedProject }" project="{id}"> -->
+                                <!-- <i class="fa {checked ? 'fa-check-square-o' : ''} {!checked ? 'fa-square-o' : ''}"></i> { profileName } -->
                             <!-- </a> -->
                         <!-- </li> -->
                         <li>
@@ -59,16 +59,16 @@
                 </div>
             </div>
         </div>
-        <!-- <nav class="nav">
+        <nav class="nav">
             <div class="dropdown">
                 <a href="" class="nav-link nav-link-profile" data-toggle="dropdown" aria-label="Settings">
-                    <span class="logged-name hidden-md-down">{name}</span>
-                    <img alt="" src="{avatar}" onError="{errorProfileImage}" class="wd-32 rounded-circle">
+                    <span class="logged-name hidden-md-down">{profileName}</span>
+                    <img alt="" src="{avatar}" onerror="{getNoImage}" class="wd-32 rounded-circle">
                     <span class="square-10 bg-success"></span>
                 </a>
                 <div class="dropdown-menu pd-10 wd-200">
                     <nav class="nav nav-style-1 flex-column">
-                        <a href="#setting/global-setting?project={localStorage.prjId}" class="nav-link">
+                        <a href="#setting/global-setting?project={myCurrentProject}" class="nav-link">
                             <i class="fa fa-wrench"></i>
                             Profile Setting
                         </a>
@@ -76,11 +76,11 @@
                             <i class="fa fa-cloud-download"></i>
                             Background Tasks
                         </a>
-                        <a href="#setting/filterlist?project={localStorage.prjId}" class="nav-link">
+                        <a href="#setting/filterlist?project={myCurrentProject}" class="nav-link">
                             <i class="fa fa-sort-amount-asc"></i>
                             Filter List
                         </a>
-                        <a href="#change-password?project={localStorage.prjId}" class="nav-link">
+                        <a href="#change-password?project={myCurrentProject}" class="nav-link">
                             <i class="fa fa-unlock-alt"></i>
                             Change Password
                         </a>
@@ -91,7 +91,7 @@
                     </nav>
                 </div>
             </div>
-        </nav> -->
+        </nav>
     </div>
     <script>
         import controller from './header'

@@ -1,7 +1,7 @@
 import observable from '@riotjs/observable'
-import $ from 'MyThemeVendors/jquery/jquery'
-
-export const jquery = $
+import { head } from 'lodash'
+import { getStorage } from './storage'
+import Auth from './auth'
 
 export const initiateMenu = () => {
     $(document).ready(function() {
@@ -10,6 +10,19 @@ export const initiateMenu = () => {
     })
 }
 
+export const currentProject = () => {
+    return getStorage('CURRENT_PROJECT')
+}
+
+export const getProject = () => {
+    if (!Auth.projects) return null
+    if (Auth.projects.length != 0) {
+        return currentProject ? currentProject : head(Auth.projects).id
+    }
+}
+
+export const MenuActive = observable()
+export const Streams = observable()
 export const urlStream = observable()
 export const menu = observable()
 export const menuleft = observable()

@@ -1,5 +1,6 @@
-/* utilities used for util function like localstorage, date, or many others */
-const isDevelopment = NODE_ENV !== 'production'
+import $ from 'MyThemeVendors/jquery/jquery'
+
+export const jquery = $
 
 export const p = (name) => {
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href)
@@ -8,14 +9,6 @@ export const p = (name) => {
     } else {
         return results[1] || 0
     }
-}
-
-export const getStorage = (key, prefix, defaultValue) => {
-    if (prefix) prefix = `${prefix}_`
-    const fullKey = `${prefix}${key}`
-    const v = localStorage.getItem(fullKey)
-    logInfo(`[STORAGE] getting ${fullKey}`)
-    return v || defaultValue
 }
 
 export const formatNumber = function (n) {
@@ -35,15 +28,6 @@ export const sendToClipboard = function (text) {
     if (!navigator) alert('copy text doesn\'t supported')
     navigator.clipboard.writeText(text)
 }
-export const showAlertError = function (e) {
-    if (!e) return null
-    Swal.fire({type: 'error', title: 'Error', text: e.error || e.message})
-    console.error(e)
-}
-
-export const showAlertSuccess = function (message) {
-    Swal.fire({type: 'success', title: 'Success', text: message})
-}
 
 export const parseRequestURL = function () {
     const url = location.hash.slice(1).toLowerCase() || ''
@@ -59,23 +43,6 @@ export const parseRequestURL = function () {
 
 export const sleep = function (ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
-}
-
-export const debugLog = function (...opt) {
-    if (!isDevelopment) return null
-    const time = moment().format('LLL')
-    console.log(time, ...opt)
-}
-
-export const logInfo = function (...opt) {
-    const time = moment().format('LLL')
-    console.log(`[${APP_NAME}:v${APP_VERSION}]`, time, ...opt)
-}
-
-export const logError = function (...opt) {
-    const time = moment().format('LLL')
-    console.log(`[${APP_NAME}:v${APP_VERSION}]`, time)
-    console.error(opt)
 }
 
 export const randomString = function (size=3, opt={ onlyNums: false, onlyChars: false }) {
@@ -98,18 +65,4 @@ export const randomNumber = function (min=1, max=99999) {
 
 export const goTo = (pathname) => {
     location.pathname = pathname
-}
-
-export const changeStorage = (data, prefix) => {
-    if (prefix) prefix = `${prefix}_`
-    for (const key in data) {
-        const value = data[key]
-        const fullKey = `${prefix}${key}`
-        localStorage.setItem(fullKey, value)
-        logInfo(`[STORAGE] setting ${fullKey}`)
-    }
-}
-
-export const deleteStorage = (item) => {
-    localStorage.removeItem(item)
 }

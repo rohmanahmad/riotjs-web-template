@@ -4,7 +4,10 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const theme = process.env.THEME || 'default'
 const nodeEnv = process.env.NODE_ENV || 'development'
+const domainUrl = process.env.DOMAIN_URL || 'http://localhost:3000'
 const { name, version } = require('./package.json')
+
+__webpack_public_path__ = `${domainUrl}/`;
 
 module.exports = {
   mode: 'development',
@@ -93,6 +96,20 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(png|jpe?g|gif|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[contenthash].[ext]',
+              outputPath: 'assets/',
+              publicPath: 'assets/',
+              postTransformPublicPath: (p) => `__webpack_public_path__ + ${p}`,
+            },
+          },
+        ],
+      },
     ]
   },
   plugins: [
@@ -104,6 +121,10 @@ module.exports = {
       APP_VERSION: JSON.stringify(version),
       NODE_ENV: JSON.stringify(nodeEnv),
       R10_API_URL: JSON.stringify(process.env.R10_API_URL),
+      COMMAND_CENTER_URL: JSON.stringify(process.env.COMMAND_CENTER_URL),
+      INFOGRAPHIC_BRAND_URL: JSON.stringify(process.env.INFOGRAPHIC_BRAND_URL),
+      INFOGRAPHIC_COMPETITION_URL: JSON.stringify(process.env.INFOGRAPHIC_COMPETITION_URL),
+
     }),
     new webpack.HotModuleReplacementPlugin(),
   ]
