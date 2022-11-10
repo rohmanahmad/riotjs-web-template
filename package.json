@@ -24,9 +24,11 @@
   },
   "homepage": "https://github.com/rohmanahmad/riotjs-web-template#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
     "@riotjs/compiler": "^6.4.1",
     "@riotjs/hot-reload": "^6.0.1",
     "@riotjs/lazy": "^2.0.2",
+    "@riotjs/observable": "^4.1.1",
     "@riotjs/route": "^8.0.2",
     "@riotjs/webpack-loader": "^6.0.0",
     "css-loader": "^6.7.1",
@@ -38,8 +40,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "@riotjs/observable": "^4.1.1",
     "axios": "^1.1.3",
+    "idb-keyval": "^6.2.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "riot": "^7.0.7",

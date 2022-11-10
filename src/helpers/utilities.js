@@ -1,13 +1,9 @@
-import $ from 'MyThemeVendors/jquery/jquery'
-
-export const jquery = $
-
-export const p = (name) => {
+export const getQueryParams = (name, defaultValue=null) => {
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href)
     if (results == null) {
-        return null
+        return defaultValue
     } else {
-        return results[1] || 0
+        return results[1] || defaultValue
     }
 }
 

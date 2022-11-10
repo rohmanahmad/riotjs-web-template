@@ -68,23 +68,26 @@ export class Request {
     setBaseURL(url) {
         this.baseURL = url
     }
+    setBearerToken(token) {
+        this.currentToken = token
+    }
     /* 
     * error: function
     * success: function
     */
     init(error, success) {
         let service = Axios.create({
-            baseURL: this.url,
+            baseURL: this.baseURL,
             /* timeout: 1000, */
             headers: {
                 'Accept': 'application/json',
-                'Authorization': 'Bearer ' + getStorage('token'),
+                'Authorization': 'Bearer ' + this.currentToken,
                 'X-R10-REQID': v4(),
                 'X-CLIENT-ID': getStorage('clientid ')
             }
         })
         service.interceptors.request.use(this.setupTokenAvailable, this.setupTokenNotAvailable)
-        service.interceptors.response.use(success || this.handleSuccess, error || this.handleError)
+        // service.interceptors.response.use(success || this.handleSuccess, error || this.handleError)
         this.service = service
         return this
     }

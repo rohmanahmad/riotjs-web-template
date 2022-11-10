@@ -3,64 +3,120 @@ import { route, toRegexp, match } from '@riotjs/route'
 import components from '../../modules/modules'
 
 import pages from '../../modules/routes'
+import { goTo, getQueryParams } from 'MyHelpers/utilities'
 
 import 'MyThemeCss/bracket.css'
 import 'MyThemeCss/ripple10-style.css'
 import 'MyThemeCss/sweetalert.min.css'
+import 'MyThemeVendors/font-awesome/css/font-awesome.css'
 
-import { menu, menuleft, maxStreams, urlStream } from 'MyHelpers/bracket-plus'
-import { jquery, p } from 'MyHelpers/utilities'
+import { jquery } from 'MyHelpers/bracket-plus'
+
+import { checkAuth } from 'MySDK/auth-sdk'
+import { set } from 'idb-keyval' // https://www.npmjs.com/package/idb-keyval
+
+const exceptMenuAndHeader = ['login', 'register', 'not-found'] // tambahkan disini jika perlu
 
 export default {
     components,
     state: {
         pages,
+        showLogin: false,
+        showHeader: false,
+        showLeftMenu: false,
+        showRestriction: false,
         showNotFound: false,
         activePage: null
     },
-    onBeforeMount({ isServer }) {
-        this.infographic = false
+    onBeforeMount() {
+        this.initialRouteStream()
+    },
+    onBeforeUpdate() {
+        this.initialRouteStream()
+    },
+    onAnyRouteError(path) {
+        console.log(path)
+        debugger
+    },
+    initialRouteStream() {
+        if (this.anyRouteStream) this.anyRouteStream.end()
         this.anyRouteStream = route('(.*)')
         this.anyRouteStream.on.value(this.onAnyRoute)
+        this.anyRouteStream.on.error(this.onAnyRouteError)
+        this.anyRouteStream.on.end(console.log)
     },
     onAnyRoute(path) {
         const activePage = pages.find(p => match(path.pathname, toRegexp(p.path)))
-        console.log(activePage, !activePage)
-        this.update({
+        const newState = {
             activePage,
-            showNotFound: !activePage
-        })
+            showLogin: false,
+            showNotFound: false,
+            showHeader: false,
+            showLeftMenu: false,
+            showRestriction: false
+        }
+        if (!activePage) {
+            newState['showNotFound'] = true
+            this.update(newState)
+            return null
+        }
+        console.log('active-page', activePage.label)
+        if (activePage.label != 'Login') {
+            this.checkAuth()
+                .catch((err) => {
+                    if (err.response.status === 402) {
+                        if (!activePage) return null
+                        if (activePage && activePage.label !== 'Login') goTo('/auth/login')
+                    }
+                    return false
+                })
+                .then((res) => {
+                    if (res) {
+                        if (exceptMenuAndHeader.indexOf(activePage.label) === -1) {
+                            newState['showHeader'] = true
+                            newState['showLeftMenu'] = true
+                        }
+                        newState['showLogin'] = false
+                        newState['showNotFound'] = !activePage
+                        this.update(newState)
+                    } else {
+                        newState['showLogin'] = true
+                        newState['showNotFound'] = !activePage
+                        this.update(newState)
+                    }
+                })
+        }
     },
     onBeforeUnmount() {
         this.anyRouteStream.end()
     },
     onMounted() {
-        localStorage.setItem('token', p('token'))
-        this.changeClass()
-        this.changeLeft()
-        if (localStorage.maxdate) {
-            var maxStreams = localStorage.maxdate
-        }
-        if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
-            this.lefside = "pd-t-60"
-            this.rightside = "pd-t-60"
-            this.validasimaxstream = true
-        } else {
-            this.lefside = "pd-t-60"
-            this.rightside = "padding-top : 0px"
-            this.validasimaxstream = false
-        }
-        this.update()
-        this.listenMenu()
-        this.listenMaxStream()
-        this.listenUrlChanged()
+        const token = getQueryParams('token')
+        if (token) set('app_token', token)
     },
-    listenMaxStream() {
-        maxStreams.on('maxstreams', (data) => {
-            if (JSON.parse(localStorage.getItem('package'))) {
-                var totalStreams = JSON.parse(localStorage.getItem('package')).records['max_streams'];
+    /* onMounted() {
+        if (!this.state.showLogin) {
+            this.changeClass()
+            this.changeLeft()
+            if (localStorage.maxdate) {
+                var maxStreams = localStorage.maxdate
             }
-        })
+            if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
+                this.lefside = "pd-t-60"
+                this.rightside = "pd-t-60"
+                this.validasimaxstream = true
+            } else {
+                this.lefside = "pd-t-60"
+                this.rightside = "padding-top : 0px"
+                this.validasimaxstream = false
+            }
+            this.update()
+            this.listenMenu()
+            this.listenUrlChanged()
+        }
+    }, */
+    async checkAuth() {
+        return await checkAuth()
     },
     listenMenu() {
         menu.on('togglecollapse', (isCollapsed) => {

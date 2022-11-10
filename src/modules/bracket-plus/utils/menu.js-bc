@@ -2,7 +2,7 @@ import { find, each } from 'lodash'
 import { getQueryParams } from 'MyHelpers/utilities'
 import { getClientProjects } from 'MySDK/projects-sdk'
 import { myRestriction } from 'MySDK/auth-sdk'
-import { getProject, myMenu, myAllProjects, myCurrentProject, jquery } from 'MyHelpers/bracket-plus'
+import { getProject, Streams, MenuActive, urlStream, menu, jquery } from 'MyHelpers/bracket-plus'
 import { getStorage, changeStorage } from 'MyHelpers/storage'
 import { logInfo } from 'MyHelpers/logs'
 import Auth from 'MyHelpers/auth'
@@ -45,34 +45,84 @@ export default {
         settingIcon,
     },
     onBeforeMount() {
+        this.AuthToken = getStorage('AuthToken' || '')
+        this.clientid = getStorage('clientid' || '')
+        this.active = false
+        this.active1 = false
+        this.menuPermission
+        this.profileImage = getStorage('images')
+        this.profileName = getStorage('name')
+        this.permission
+        this.lefside = false
+        this.subTrendings = false
+        this.subInfographic = false
         
+        this.PR = Number(getStorage('PR'))
+        this.DH = Number(getStorage('DH'))
+        this.BT = Number(getStorage('BT'))
+        this.CC = Number(getStorage('CC'))
+        this.showAA = this.DH + this.BT
+        
+        this.packageRest = {}
+        this.packageRest['summary'] = false
+        this.packageRest['trendings'] = false
+        this.packageRest['mentions'] = false
+        this.packageRest['streams'] = false
+        this.packageRest['authors'] = false
+        this.packageRest['analysis'] = false
+        this.packageRest['comparison'] = false
+        this.packageRest['infographic'] = false
+        this.packageRest['correction'] = false
+        this.packageRest['pr_dashboard'] = false
+        this.packageRest['project_settings'] = false
+        this.packageRest['command_center'] = false
+
+        this.menuActive = {
+            streams: '',
+            analysis: '',
+            mystream: '',
+            advance_analysis: '',
+            competitiveness: '',
+            pr_dashboard: '',
+            buzz_tracking: '',
+            dhi: '',
+            cc: '',
+            project_settings: '',
+            Correction: '',
+            download: '',
+            donwloadcharts : '',
+            trendings : '',
+            "subTrendings.twitter.global" : '',
+            "subTrendings.twitter.indonesia" : '',
+            "subTrendings.google.indonesia" : ''
+        }
     },
     onMounted() {
-        // this.getavailablekeyword()
-        // this.UrlProject = getQueryParams('project', getProject())
+        this.getavailablekeyword()
+        this.UrlProject = getQueryParams('project', getProject())
         
-        // if(getStorage('defaultProject')){
-        //     this.projectId = getStorage('defaultProject')
-        // } else {
-        //     this.projectId = this.UrlProject
-        // }
-        // changeStorage('prj', this.UrlProject)
-        // changeStorage('prjId', this.projectId)
-        // if (getStorage('maxdate')) {
-        //     var maxStreams = getStorage('maxdate')
-        // }
-        // if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
-        //     this.lefside = true
-        // } else {
-        //     this.lefside = false
-        // }
+        if(getStorage('defaultProject')){
+            this.projectId = getStorage('defaultProject')
+        } else {
+            this.projectId = this.UrlProject
+        }
+        changeStorage('prj', this.UrlProject)
+        changeStorage('prjId', this.projectId)
+        if (getStorage('maxdate')) {
+            var maxStreams = getStorage('maxdate')
+        }
+        if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
+            this.lefside = true
+        } else {
+            this.lefside = false
+        }
     
-        // this.update({
-        //     name: Auth.name,
-        // })
+        this.update({
+            name: Auth.name,
+        })
     
-        // this.packageRestriction()
-        // this.listener()
+        this.packageRestriction()
+        this.listener()
     },
     onBeforeUnmount() {},
     listener() {

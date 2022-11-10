@@ -1,7 +1,7 @@
 import {filter, map, orderBy, each} from 'lodash'
 
-import { menu, menuleft, urlStream, getProject, currentProject } from 'MyHelpers/bracket-plus'
-import { jquery, p } from 'MyHelpers/utilities'
+import { jquery } from 'MyHelpers/bracket-plus'
+import { getQueryParams } from 'MyHelpers/utilities'
 import { logInfo, logError } from 'MyHelpers/logs'
 import { myRestriction } from 'MySDK/auth-sdk'
 import { myProjects } from 'MySDK/projects-sdk'
@@ -10,47 +10,47 @@ import noImage from 'MyThemeImages/components/icons/no-image.png'
 
 export default {
     onBeforeMount() {
-        this.avatar = getStorage('avatar') || noImage
-        this.profileName = getStorage('name')
-        this.lefside = false
-        this.selectedProject = {
-            name: 'Choose Project',
-            'id': 0
-        }
-        this.activeProjects = {
-            name: 'Choose Project',
-            'id': 0
-        }
-        this.currentUrlStream = 'summary'
-        this.isSerchingProject = false
-        this.isShowingRecent = false
-        this.searchResult = []
-        this.searchText = ''
-        this.recentTemp = []
-        this.recentProject = [{
-            id: 12,
-            name: 'No Recent Project'
-        }]
-        this.maxRecent = 10
-        this.projects = []
-        this.allProjectIds = ''
-        this.myCurrentProject = currentProject()
+        // this.avatar = getStorage('avatar') || noImage
+        // this.profileName = getStorage('name')
+        // this.lefside = false
+        // this.selectedProject = {
+        //     name: 'Choose Project',
+        //     'id': 0
+        // }
+        // this.activeProjects = {
+        //     name: 'Choose Project',
+        //     'id': 0
+        // }
+        // this.currentUrlStream = 'summary'
+        // this.isSerchingProject = false
+        // this.isShowingRecent = false
+        // this.searchResult = []
+        // this.searchText = ''
+        // this.recentTemp = []
+        // this.recentProject = [{
+        //     id: 12,
+        //     name: 'No Recent Project'
+        // }]
+        // this.maxRecent = 10
+        // this.projects = []
+        // this.allProjectIds = ''
+        // this.myCurrentProject = currentProject()
     },
     onMounted() {
-        this.project()
-        if (localStorage.maxdate) {
-            var maxStreams = localStorage.maxdate
-        }
-        if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
-            this.lefside = true
-        } else {
-            this.lefside = false
-        }
-        this.getavailableChannel()
-        jquery(document).on('click', '.stay-open .dropdown-menu', function (e) {
-            e.stopPropagation()
-        })
-        this.listenUrlStream()
+        // this.project()
+        // if (localStorage.maxdate) {
+        //     var maxStreams = localStorage.maxdate
+        // }
+        // if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
+        //     this.lefside = true
+        // } else {
+        //     this.lefside = false
+        // }
+        // this.getavailableChannel()
+        // jquery(document).on('click', '.stay-open .dropdown-menu', function (e) {
+        //     e.stopPropagation()
+        // })
+        // this.listenUrlStream()
     },
     onBeforeUpdate() {},
     onBeforeUnmount() {},
@@ -123,7 +123,7 @@ export default {
         return res
     },
     norequestProject(res) {
-        let projectData = p('project') ? p('project') : ''
+        let projectData = getQueryParams('project', '')
         let selectedProjects = []
         if (projectData) {
             var prj = p('project') ? p('project') : getProject().toString()

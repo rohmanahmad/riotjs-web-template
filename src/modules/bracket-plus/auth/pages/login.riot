@@ -1,3 +1,32 @@
 <login-page>
-    Login Page
+    <div class="d-flex align-items-center justify-content-center bg-br-primary ht-100v" style="background: #f4f8f9">
+        <div class="overlay-body d-flex align-items-center justify-content-center">
+            <div class="login-wrapper wd-300 wd-xs-350 pd-25 pd-xs-40 bg-white rounded shadow-base" style="box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.10) !important;">
+                <div class="signin-logo tx-center tx-28 tx-bold tx-inverse">
+                    <span class="tx-normal">Welcome !</span>
+                </div>
+                <div class="tx-center mg-b-60">Sign in to your account</div>
+                <form id="checkform" method="post" onsubmit="{ doLogin }">
+                    <div class="input-group mg-t-20">
+                        <span class="input-group-addon">
+                            <!-- <i class="ion ion-ios-email-outline tx-16 lh-0 op-6"></i> -->
+                            <font-icon icon-type="fa" icon-name="fa-user" el-class="tx-10"/>
+                        </span>
+                        <input type="text" class="form-control" name="username" id="{state.ids.username}" placeholder="Enter your username">
+                    </div>
+                    <div class="input-group mg-t-20">
+                        <span class="input-group-addon">
+                            <font-icon icon-type="fa" icon-name="fa-lock" el-class="tx-10"/>
+                        </span>
+                        <input type="password" class="form-control" name="password" id="{state.ids.password}" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-info btn-block cursor-pointer mg-t-20">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        import controller from './login'
+        export default controller
+    </script>
 </login-page>
