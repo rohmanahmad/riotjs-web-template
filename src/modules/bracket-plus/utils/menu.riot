@@ -1,34 +1,21 @@
 <left-menu-app>
     <!-- ########## START: LEFT PANEL ########## -->
-    <div class="br-logo mg-t-50">
-        <a>
-            <img src="{logos.logoRipple10 }" width="120" class="logo-img-mobile r10-xs-logo mg-t-min-4" alt="" />
-        </a>
+    <div class="br-logo">
+        <img src="{state.ripple10Logo }" width="120" class="logo-img-mobile r10-xs-logo mg-t-min-4" alt="" />
     </div>
-    <div class="br-sideleft overflow-y-auto mg-t-50 shadow-base" onmouseenter="{ expandMenu }" onmouseleave="{ collapseMenu }">
+    <div class="br-sideleft overflow-y-auto shadow-base">
         <ul class="br-sideleft-menu mg-t-10">
-            <li class="br-menu-item " if="{packageRest['summary']}">
-                <a href="/summary?project={projectId}" class="br-menu-link  {menuActive.summary}">
-                    <img src="{logos.summaryIcon}" width="20" height="20" class="mg-l-min-5">
-                    <!-- <i class="menu-item-icon icon ion-document-text tx-22"></i> -->
-                    <span class="menu-item-label">Summary</span>
+            <li class="br-menu-item cursor-pointer" each="{ menuItem in state.menu }">
+                <a href="{ menuItem.link }?project={ state.currentProject }" onclick="{gotoLink}" data-link="{ menuItem.link }" data-name="{ menuItem.name }" class="br-menu-link { menuItem.hasChild ? 'with-sub' : '' } { menuItem.class } {menuItem.name === state.activeMenu ? 'active' : ''}">
+                    <img src="{ menuItem.logo }" width="20" height="20" class="mg-l-min-5">
+                    <span class="menu-item-label">{ menuItem.title }</span>
                 </a>
-                <!-- br-menu-link  -->
-            </li>
-            <li class="br-menu-item cursor-pointer" if="{packageRest['infographic']}">
-                <a onclick="{() => this.subInfographic = !this.subInfographic}" class="br-menu-link with-sub {subInfographic ? 'show-sub active' : ''}">
-                    <img src="{logos.infographicIcon}" width="20" height="20" class="mg-l-min-5">
-                    <!-- <i class="menu-item-icon icon ion-pie-graph tx-22"></i> -->
-                    <span class="menu-item-label">Infographic</span>
-                </a>
-                <ul class="br-menu-sub {subInfographic ? 'd-block' : ''}">
-                    <!-- <li class="sub-item curisor-pointer"><a onclick="{infographicBrand}" class="sub-link">My Brand</a></li> -->
-                    <!-- <li class="sub-item curisor-pointer"><a href="/infographic?project={projectId}" target="_blank" class="sub-link color-blueteal">My Brand</a></li> -->
-                    <li class="sub-item curisor-pointer"><a href="/infographic?project={projectId}" target="_blank" class="sub-link color-blueteal">My Brand</a></li>
-                    <li class="sub-item cursor-pointer"><a href="/competition/infographic?project={projectId}" target="_blank" class="sub-link" style="color:#17A2B8;">Competition</a></li>
+                <ul if="{ menuItem.childs }" class="br-menu-sub {menuItem.name === state.activeMenu ? 'd-block' : ''}">
+                    <li class="sub-item cursor-pointer" each="{ childMenu in menuItem.childs }">
+                        <a href="{ childMenu.link }?project={ state.currentProject }" onclick="{ gotoLink }" data-link="{ childMenu.link }" data-name="{ childMenu.name }" class="sub-link color-blueteal">{ childMenu.title }</a>
+                    </li>
                 </ul>
             </li>
-
         </ul>
         <!-- br-sideleft-menu -->
     </div>

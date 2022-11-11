@@ -5,15 +5,15 @@ import components from '../../modules/modules'
 import pages from '../../modules/routes'
 import { goTo, getQueryParams } from 'MyHelpers/utilities'
 
-import 'MyThemeCss/bracket.css'
-import 'MyThemeCss/ripple10-style.css'
-import 'MyThemeCss/sweetalert.min.css'
-import 'MyThemeVendors/font-awesome/css/font-awesome.css'
-
 import { jquery } from 'MyHelpers/bracket-plus'
 
 import { checkAuth } from 'MySDK/auth-sdk'
 import { set } from 'idb-keyval' // https://www.npmjs.com/package/idb-keyval
+
+import 'MyThemeCss/bracket.css'
+import 'MyThemeCss/ripple10-style.css'
+import 'MyThemeCss/sweetalert.min.css'
+import 'MyThemeVendors/font-awesome/css/font-awesome.css'
 
 const exceptMenuAndHeader = ['login', 'register', 'not-found'] // tambahkan disini jika perlu
 

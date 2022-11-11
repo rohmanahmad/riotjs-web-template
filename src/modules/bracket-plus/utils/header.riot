@@ -16,7 +16,7 @@
                 <span class="label hidden-md-down"> </span>
                 <a href="" aria-label="Select project" onclick="{ resetSearch }" class="btn btn-outline-primary  mg-t-10" data-toggle="dropdown">
                     <i class="fa fa-plus"></i>
-                    <span class=" hidden-md-down">{ activeProjects.name }</span>
+                    <span class=" hidden-md-down">{ state.currentProject }</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-header wd-250">
                     <div class="form-group mg-5 has-search pd-r-5 pd-l-5 pd-t-5">
@@ -61,30 +61,30 @@
         </div>
         <nav class="nav">
             <div class="dropdown">
-                <a href="" class="nav-link nav-link-profile" data-toggle="dropdown" aria-label="Settings">
-                    <span class="logged-name hidden-md-down">{profileName}</span>
-                    <img alt="" src="{avatar}" onerror="{getNoImage}" class="wd-32 rounded-circle">
+                <a class="nav-link nav-link-profile" data-toggle="dropdown" aria-label="Settings">
+                    <span class="logged-name hidden-md-down">{ state.profileName }</span>
+                    <img alt="" src="{ state.profileAvatar }" onerror="{ getNoImage }" class="wd-32 rounded-circle cursor-pointer">
                     <span class="square-10 bg-success"></span>
                 </a>
                 <div class="dropdown-menu pd-10 wd-200">
                     <nav class="nav nav-style-1 flex-column">
-                        <a href="#setting/global-setting?project={myCurrentProject}" class="nav-link">
+                        <a href="/settings/global-setting" class="nav-link">
                             <i class="fa fa-wrench"></i>
                             Profile Setting
                         </a>
-                        <a href="#extras/download-tasks" class="nav-link">
+                        <a href="/extras/download-tasks" class="nav-link">
                             <i class="fa fa-cloud-download"></i>
                             Background Tasks
                         </a>
-                        <a href="#setting/filterlist?project={myCurrentProject}" class="nav-link">
+                        <a href="/settings/filter-list" class="nav-link">
                             <i class="fa fa-sort-amount-asc"></i>
                             Filter List
                         </a>
-                        <a href="#change-password?project={myCurrentProject}" class="nav-link">
+                        <a href="/auth/change-password" class="nav-link">
                             <i class="fa fa-unlock-alt"></i>
                             Change Password
                         </a>
-                        <a href="#logout" class="nav-link mg-t-10 bd-t" style="color: red;">
+                        <a href="/auth/logout" class="nav-link mg-t-10 bd-t" style="color: red;">
                             <i class="fa fa-sign-out"></i>
                             Logout
                         </a>

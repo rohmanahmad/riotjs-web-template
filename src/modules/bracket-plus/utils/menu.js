@@ -1,80 +1,43 @@
 import { find, each } from 'lodash'
-import { getQueryParams } from 'MyHelpers/utilities'
+import { getQueryParams, goTo } from 'MyHelpers/utilities'
 import { getClientProjects } from 'MySDK/projects-sdk'
 import { myRestriction } from 'MySDK/auth-sdk'
-import { getProject, myMenu, myAllProjects, myCurrentProject, jquery } from 'MyHelpers/bracket-plus'
+import { getProject, myMenuRoutes, myAllProjects, myCurrentProject, jquery } from 'MyHelpers/bracket-plus'
 import { getStorage, changeStorage } from 'MyHelpers/storage'
 import { logInfo } from 'MyHelpers/logs'
-import Auth from 'MyHelpers/auth'
 
 import logoRipple10 from 'MyThemeImages/components/logos/ripple10.svg'
 
-import summaryIcon from 'MyThemeImages/components/icons/summary-baru.png'
-import trendIcon from 'MyThemeImages/components/icons/trends.ico'
-import mentionsIcon from 'MyThemeImages/components/icons/chat-baru.png'
-import authorsIcon from 'MyThemeImages/components/icons/group-baru.png'
-import analysisIcon from 'MyThemeImages/components/icons/signal-baru.png'
-import comparisonIcon from 'MyThemeImages/components/icons/comparison-baru.png'
-import buzzerIcon from 'MyThemeImages/components/icons/bullhorn-baru.png'
-import healthIcon from 'MyThemeImages/components/icons/flash-baru.png'
-import infographicIcon from 'MyThemeImages/components/icons/pie-baru.png'
-import reportIcon from 'MyThemeImages/components/icons/download-baru.png'
-import correctionIcon from 'MyThemeImages/components/icons/edit-baru.png'
-import httpsIcon from 'MyThemeImages/components/icons/monitor-baru.png'
-import downloadIcon from 'MyThemeImages/components/icons/download-baru.png'
-import settingIcon from 'MyThemeImages/components/icons/setting-baru.png'
-
-
 export default {
-    logos: {
-        logoRipple10,
-        // menu
-        summaryIcon,
-        trendIcon,
-        mentionsIcon,
-        authorsIcon,
-        analysisIcon,
-        comparisonIcon,
-        buzzerIcon,
-        healthIcon,
-        infographicIcon,
-        reportIcon,
-        correctionIcon,
-        httpsIcon,
-        downloadIcon,
-        settingIcon,
+    state: {
+        ripple10Logo: logoRipple10,
+        currentProject: null,
+        activeMenu: getStorage('current-active-menu', 'summary'),
+        menu: []
     },
     onBeforeMount() {
-        
+        myMenuRoutes()
+            .then(menu => {
+                this.update({ menu })
+            })
     },
     onMounted() {
-        // this.getavailablekeyword()
-        // this.UrlProject = getQueryParams('project', getProject())
-        
-        // if(getStorage('defaultProject')){
-        //     this.projectId = getStorage('defaultProject')
-        // } else {
-        //     this.projectId = this.UrlProject
-        // }
-        // changeStorage('prj', this.UrlProject)
-        // changeStorage('prjId', this.projectId)
-        // if (getStorage('maxdate')) {
-        //     var maxStreams = getStorage('maxdate')
-        // }
-        // if (maxStreams != null && maxStreams != '' && maxStreams != 'null') {
-        //     this.lefside = true
-        // } else {
-        //     this.lefside = false
-        // }
-    
-        // this.update({
-        //     name: Auth.name,
-        // })
-    
-        // this.packageRestriction()
-        // this.listener()
     },
     onBeforeUnmount() {},
+    gotoLink(e) {
+        e.preventDefault()
+        let el = e.target
+        if (el.parentElement.classList.contains('br-menu-link')) el = el.parentElement
+        const name = el.dataset.name
+        changeStorage({'current-active-menu': name})
+        if (el.classList) {
+            if (!el.classList.contains('trigger-child')) {
+                goTo(el.dataset.link)
+            } else {
+                this.update({ activeMenu: name })
+            }
+        }
+    },
     listener() {
         this.listenUpdateLeftside()
         this.listenMenuActivated()

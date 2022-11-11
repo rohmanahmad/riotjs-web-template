@@ -12,7 +12,7 @@ export const deleteStorage = (item) => {
     localStorage.removeItem(item)
 }
 
-export const changeStorage = (data, prefix) => {
+export const changeStorage = (data, prefix='') => {
     if (prefix) prefix = `${prefix}_`
     for (const key in data) {
         const value = data[key]

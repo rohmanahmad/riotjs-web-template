@@ -3,13 +3,23 @@ import {filter, map, orderBy, each} from 'lodash'
 import { jquery } from 'MyHelpers/bracket-plus'
 import { getQueryParams } from 'MyHelpers/utilities'
 import { logInfo, logError } from 'MyHelpers/logs'
-import { myRestriction } from 'MySDK/auth-sdk'
-import { myProjects } from 'MySDK/projects-sdk'
-import { getStorage } from 'MyHelpers/storage'
+import { getUserProfile, myAllProjects } from 'MyHelpers/bracket-plus'
 import noImage from 'MyThemeImages/components/icons/no-image.png'
+import 'bootstrap/js/src/dropdown'
 
 export default {
+    state: {
+        profileId: null,
+        profileName: null,
+        profileAvatar: null,
+        lastLogin: null,
+        projects: []
+    },
     onBeforeMount() {
+        getUserProfile()
+            .then(res => this.update(res))
+        myAllProjects()
+            .then(projects => this.update(projects))
         // this.avatar = getStorage('avatar') || noImage
         // this.profileName = getStorage('name')
         // this.lefside = false
@@ -66,9 +76,6 @@ export default {
     },
     toggleCheckSelectedProject(e) {
         e.item.checked = !e.item.checked
-    },
-    errorProfileImage(e) {
-        e.target.src = '/assets/images/components/icons/no-image.png'
     },
     submitProjects() {
         const selectedPrj = this.projects.filter(x => x.checked).map(x => x.id)
@@ -260,6 +267,7 @@ export default {
         }
     },
     showLeft(e) {
+        debugger
         e.preventDefault()
         this.ontotal = this.ontotal + 1
         if (this.ontotal == 1) {
