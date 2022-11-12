@@ -1,9 +1,10 @@
-import {filter, map, orderBy, each} from 'lodash'
+import {filter, map, orderBy, each, update} from 'lodash'
 
+import { getStorage, changeStorage } from 'MyHelpers/storage'
 import { jquery } from 'MyHelpers/bracket-plus'
 import { getQueryParams } from 'MyHelpers/utilities'
 import { logInfo, logError } from 'MyHelpers/logs'
-import { getUserProfile, myAllProjects } from 'MyHelpers/bracket-plus'
+import { getUserProfile, myAllProjects, myCurrentProject } from 'MyHelpers/bracket-plus'
 import noImage from 'MyThemeImages/components/icons/no-image.png'
 import 'bootstrap/js/src/dropdown'
 
@@ -13,38 +14,30 @@ export default {
         profileName: null,
         profileAvatar: null,
         lastLogin: null,
-        projects: []
+        currentProject: {},
+        projects: [],
+        recentProjects: [],
+        isShowMore: false
     },
     onBeforeMount() {
         getUserProfile()
             .then(res => this.update(res))
         myAllProjects()
-            .then(projects => this.update(projects))
-        // this.avatar = getStorage('avatar') || noImage
-        // this.profileName = getStorage('name')
-        // this.lefside = false
-        // this.selectedProject = {
-        //     name: 'Choose Project',
-        //     'id': 0
-        // }
-        // this.activeProjects = {
-        //     name: 'Choose Project',
-        //     'id': 0
-        // }
-        // this.currentUrlStream = 'summary'
-        // this.isSerchingProject = false
-        // this.isShowingRecent = false
-        // this.searchResult = []
-        // this.searchText = ''
-        // this.recentTemp = []
-        // this.recentProject = [{
-        //     id: 12,
-        //     name: 'No Recent Project'
-        // }]
-        // this.maxRecent = 10
-        // this.projects = []
-        // this.allProjectIds = ''
-        // this.myCurrentProject = currentProject()
+            .then(projects => {
+                let updatedState = { projects }
+                if (projects.length > 5) updatedState['isShowMore'] = true
+                if (this.state.recentProjects.length === 0) {
+                    const recentProjects = JSON.parse(
+                        getStorage('recent_projects', JSON.stringify(projects))
+                    )
+                    updatedState['recentProjects'] = recentProjects
+                }
+                this.update(updatedState)
+            })
+        myCurrentProject()
+            .then(currentProject => {
+                this.update({ currentProject })
+            })
     },
     onMounted() {
         // this.project()
@@ -64,21 +57,35 @@ export default {
     },
     onBeforeUpdate() {},
     onBeforeUnmount() {},
-    listenUrlStream() {
+    /* listenUrlStream() {
         urlStream.on('changeUrl', (url) => {
             logInfo('header : changeUrl trigger')
             this.currentUrlStream = url
             this.update()
         })
-    },
+    }, */
     getNoImage(e) {
         e.target.src = noImage
     },
     toggleCheckSelectedProject(e) {
-        e.item.checked = !e.item.checked
+        let target = e.target
+        let isTarget = false
+        while(!isTarget) {
+            if (target.tagName === 'LI') isTarget = true
+            else target = target.parentElement
+        }
+        const projectId = parseInt(target.dataset.projectId)
+        if (!projectId) console.error('Invalid Project Id')
+        let projects = []
+        for (const project of this.state.projects) {
+            console.log(project.key_id, projectId)
+            if (project.key_id === projectId) project.selected = !project.selected
+            projects.push(project)
+        }
+        console.log('>>>', projects)
     },
-    submitProjects() {
-        const selectedPrj = this.projects.filter(x => x.checked).map(x => x.id)
+    submitSelectedProjects() {
+        const selectedPrj = this.state.projects.filter(x => x.checked).map(x => x.id)
         if (selectedPrj.length === 0) {
             logError('No Project Selected')
         } else {

@@ -2,6 +2,8 @@ require('dotenv').config({})
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+
 const theme = process.env.THEME || 'default'
 const nodeEnv = process.env.NODE_ENV || 'development'
 const domainUrl = process.env.DOMAIN_URL || 'http://localhost:3000'
@@ -64,7 +66,7 @@ module.exports = {
   },
   devServer: {
     hot: true,
-    open: true,
+    open: false,
     liveReload: true,
     historyApiFallback: true
   },
@@ -113,6 +115,24 @@ module.exports = {
     ]
   },
   plugins: [
+    new BrowserSyncPlugin(
+      // BrowserSync options
+      {
+        // browse to http://localhost:3000/ during development
+        host: 'localhost',
+        port: 3001,
+        // proxy the Webpack Dev Server endpoint
+        // (which should be serving on http://localhost:3100/)
+        // through BrowserSync
+        proxy: domainUrl
+      },
+      // plugin options
+      {
+        // prevent BrowserSync from reloading the page
+        // and let Webpack Dev Server take care of this
+        reload: false
+      }
+    ),
     new HtmlWebpackPlugin({
       template: './src/properties/assets/themes/' + theme + '/template.html',
     }),

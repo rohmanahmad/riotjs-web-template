@@ -1,7 +1,7 @@
 export default [
     {
         path: '/dashboard/summaries',
-        label: 'DashboarSummary',
+        label: 'DashboardSummary',
         componentName: 'dashboard-summary'
     }
 ]

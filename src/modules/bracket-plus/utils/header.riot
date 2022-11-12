@@ -15,8 +15,8 @@
             <div class="dropdown stay-open">
                 <span class="label hidden-md-down"> </span>
                 <a href="" aria-label="Select project" onclick="{ resetSearch }" class="btn btn-outline-primary  mg-t-10" data-toggle="dropdown">
-                    <i class="fa fa-plus"></i>
-                    <span class=" hidden-md-down">{ state.currentProject }</span>
+                    <font-icon icon-type="fa" icon-name="fa-plus"/>
+                    <span class="hidden-md-down mg-l-5">{ state.currentProject.key_name }</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-header wd-250">
                     <div class="form-group mg-5 has-search pd-r-5 pd-l-5 pd-t-5">
@@ -25,7 +25,7 @@
                             name="search_project"
                             ref="search_project"
                             value="{searchText}"
-                            onkeyup="{searchProject}"
+                            onkeyup="{ searchProject }"
                             class="form-control bg-input"
                             placeholder="Search Project"
                             type="text">
@@ -33,7 +33,7 @@
                     <ul class="list-unstyled user-profile-nav">
                         <li>
                             <a href="#{currentUrlStream}?project={ allProjectIds }" class="pd-5 see-more cursor-pointer">
-                                <i class="fa fa-checks"></i> 
+                                <font-icon icon-type="fa" icon-name="fa-check"/>
                                 Select All
                             </a>
                         </li>
@@ -42,14 +42,17 @@
                                 <!-- <i class="fa {checked ? 'fa-check-square-o' : ''} {!checked ? 'fa-square-o' : ''}"></i> { profileName } -->
                             <!-- </a> -->
                         <!-- </li> -->
-                        <li>
-                            { recentProject }
+                        <li each="{ project in state.recentProjects }" data-project-id="{ project.key_id }">
+                            <a class="link cursor-pointer" onclick="{ toggleCheckSelectedProject }">
+                                <font-icon icon-type="fa" icon-name="{ project.checked ? 'fa-check-square-o': 'fa-square-o' }" el-class="mg-r-5"/>
+                                { project.key_name }
+                            </a>
                         </li>
                         <li>
                             <hr class="mg-5" />
-                            <button class="btn btn-outline-primary hg-30 pd-5 wd-60 mg-l-5" style="float: left;" onclick="{submitProjects}">Show</button>
+                            <button class="btn btn-outline-primary hg-30 pd-5 wd-60 mg-l-5" style="float: left;" onclick="{ submitSelectedProjects }">Show</button>
                             <a
-                                onclick="{ projectsetting }"
+                                href="/projects/list"
                                 class="no-hover-style pd-5 see-more cursor-pointer deleteformfilter"
                                 style="max-width: 60%;text-align: right;float: right;">
                                 See More

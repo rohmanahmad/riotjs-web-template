@@ -25,16 +25,18 @@ export default {
     },
     onBeforeUnmount() {},
     gotoLink(e) {
-        e.preventDefault()
         let el = e.target
         if (el.parentElement.classList.contains('br-menu-link')) el = el.parentElement
-        const name = el.dataset.name
-        changeStorage({'current-active-menu': name})
-        if (el.classList) {
-            if (!el.classList.contains('trigger-child')) {
-                goTo(el.dataset.link)
-            } else {
-                this.update({ activeMenu: name })
+        if (el.target !== '_blank') {
+            e.preventDefault()
+            const name = el.dataset.name
+            changeStorage({'current-active-menu': name})
+            if (el.classList) {
+                if (!el.classList.contains('trigger-child')) {
+                    goTo(el.dataset.link)
+                } else {
+                    this.update({ activeMenu: name })
+                }
             }
         }
     },

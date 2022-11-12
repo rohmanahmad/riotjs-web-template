@@ -30,6 +30,8 @@
     "@riotjs/observable": "^4.1.1",
     "@riotjs/route": "^8.0.2",
     "@riotjs/webpack-loader": "^6.0.0",
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^6.7.1",
     "dotenv": "^16.0.3",
     "html-webpack-plugin": "^5.5.0",

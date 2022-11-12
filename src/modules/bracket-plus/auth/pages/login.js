@@ -1,4 +1,5 @@
 import { randomString, goTo } from 'MyHelpers/utilities'
+import { showAlertError } from 'MyHelpers/alerts'
 import { login } from 'MySDK/auth-sdk'
 
 import { set } from 'idb-keyval' // https://www.npmjs.com/package/idb-keyval
@@ -42,9 +43,8 @@ export default {
             await set('package_available_keywords', data.package.keyword_available)
             await set('current_project', data.project[0])
             await set('last_login', data.last_logged_in)
-            debugger
         } catch (err) {
-            debugger
+            showAlertError()
         }
     }
 }
