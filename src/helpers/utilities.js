@@ -1,3 +1,6 @@
+import { isFunction } from "lodash"
+import { showAlertError } from 'MyHelpers/alerts'
+
 export const getQueryParams = (name, defaultValue=null) => {
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href)
     if (results == null) {
@@ -61,4 +64,8 @@ export const randomNumber = function (min=1, max=99999) {
 
 export const goTo = (pathname) => {
     location.pathname = pathname
+}
+
+export const isCallbackFunction = (name, cb) => {
+    if (!isFunction(cb)) showAlertError(new Error(`[${name}] Need Callback Function`))
 }

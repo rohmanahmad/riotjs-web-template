@@ -1,9 +1,10 @@
-import {filter, map, orderBy, each, update} from 'lodash'
+// import {filter, map, orderBy, each, update} from 'lodash'
 
-import { getStorage, changeStorage } from 'MyHelpers/storage'
-import { jquery } from 'MyHelpers/bracket-plus'
-import { getQueryParams } from 'MyHelpers/utilities'
+import { getStorage, clearDB } from 'MyHelpers/storage'
+// import { jquery } from 'MyHelpers/bracket-plus'
+import { getQueryParams, goTo } from 'MyHelpers/utilities'
 import { logInfo, logError } from 'MyHelpers/logs'
+import { dialog } from 'MyHelpers/alerts'
 import { getUserProfile, myAllProjects, myCurrentProject } from 'MyHelpers/bracket-plus'
 import noImage from 'MyThemeImages/components/icons/no-image.png'
 import 'bootstrap/js/src/dropdown'
@@ -14,9 +15,11 @@ export default {
         profileName: null,
         profileAvatar: null,
         lastLogin: null,
-        currentProject: {},
+        currentProjects: [],
+        multipleSelected: false,
         projects: [],
         recentProjects: [],
+        checkAll: false,
         isShowMore: false
     },
     onBeforeMount() {
@@ -25,7 +28,7 @@ export default {
         myAllProjects()
             .then(projects => {
                 let updatedState = { projects }
-                if (projects.length > 5) updatedState['isShowMore'] = true
+                if (projects.length > 10) updatedState['isShowMore'] = true
                 if (this.state.recentProjects.length === 0) {
                     const recentProjects = JSON.parse(
                         getStorage('recent_projects', JSON.stringify(projects))
@@ -35,8 +38,12 @@ export default {
                 this.update(updatedState)
             })
         myCurrentProject()
-            .then(currentProject => {
-                this.update({ currentProject })
+            .then(currentProjects => {
+                let multipleSelected = false
+                if (currentProjects.length > 1) {
+                    multipleSelected = true
+                }
+                this.update({ currentProjects, multipleSelected })
             })
     },
     onMounted() {
@@ -78,21 +85,52 @@ export default {
         if (!projectId) console.error('Invalid Project Id')
         let projects = []
         for (const project of this.state.projects) {
-            console.log(project.key_id, projectId)
-            if (project.key_id === projectId) project.selected = !project.selected
+            if (project.key_id === projectId) {
+                project.selected = !project.selected
+            }
             projects.push(project)
         }
-        console.log('>>>', projects)
+        const recentProjects = this.updateRecentProjects(projectId)
+        this.update({projects, recentProjects})
+    },
+    updateRecentProjects(projectId) {
+        let recentProjects = []
+        for (const project of this.state.recentProjects) {
+            if (project.key_id === projectId) {
+                project.selected = !project.selected
+            }
+            recentProjects.push(project)
+        }
+        return recentProjects
     },
     submitSelectedProjects() {
         const selectedPrj = this.state.projects.filter(x => x.checked).map(x => x.id)
+        debugger
         if (selectedPrj.length === 0) {
             logError('No Project Selected')
         } else {
             window.location = `#${ this.currentUrlStream }?project=${ selectedPrj.join(',') }`
         }
     },
-    getavailableChannel() {
+    doLogout(e) {
+        e.preventDefault()
+        dialog({
+            title: 'Logout?'
+        }, result => {
+            if (!result.isConfirmed) return logInfo('Canceled')
+            clearDB()
+                .then(() => goTo('/auth/login'))
+        })
+    },
+    toggleSelectAllProjects(e) {
+        e.preventDefault()
+        if (this.state.checkAll) {
+
+        }
+        this.update({ checkAll: !this.state.checkAll })
+    },
+    // 
+    /* getavailableChannel() {
         myRestriction({ 'type': 'max_date' })
             .then(dateRestriction => {
                 setTimeout(() => {
@@ -285,5 +323,5 @@ export default {
             menuleft.trigger('show-left', '')
             this.ontotal = 0
         }
-    }
+    } */
 }

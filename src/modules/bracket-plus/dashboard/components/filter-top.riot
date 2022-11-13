@@ -1,0 +1,33 @@
+<filter-top>
+    <div class="widget-2" id="{ state.id }">
+        <div class="card shadow-base overflow-hidden">
+            <div class="card-header borderbottom0">
+                <div class="media-body mg-t-10">
+                    <h4 class="tx-normal tx-roboto tx-inverse mg-b-5">{ props.title }</h4>
+                </div>
+
+                <button data-toggle="modal" data-target="#modal-filter-box"
+                    class="btn btn-block mg-b-0 mg-t-0 mg-r-10 btn-outline-secondary wd-150">
+                    <font-icon icon-type="fa" icon-name="fa-floppy-o" el-class="mg-r-5" />
+                    Save This Filter
+                </button>
+                <button data-toggle="modal" data-target="#modal-filter-list"
+                    class="btn btn-outline-primary mg-b-0 mg-t-0 mg-r-10">
+                    <font-icon icon-type="fa" icon-name="fa-filter" el-class="mg-r-5" />
+                    Filter
+                </button>
+                <div class="btn-group pull-right mg-r-m-0" role="group" aria-label="Select Range Date">
+                    <div class="pd-x-25 tx-11 pd-y-12 tx-mont tx-medium datepickerbacgraoud">
+                        <date-range-picker callback="{ updateDate }" since="{ state.since }" until="{ state.until }"
+                            el-class="color-grey-600 pull-right border-radius-10 d-sm-block no-shadow cursor-pointer"
+                            date-options="{ state.dateOptions }" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        import controller from './filter-top'
+        export default controller
+    </script>
+</filter-top>

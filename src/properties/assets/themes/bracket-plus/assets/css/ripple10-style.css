@@ -1080,10 +1080,10 @@ video::-webkit-media-controls {
     height: 1px;
 }
 
-.fa {
+/* .fa { */
     /* font-size: 1.4em !important; */
-    margin-left: -1px;
-}
+    /* margin-left: -1px; */
+/* } */
 
 .fa-1x {
     cursor: default;

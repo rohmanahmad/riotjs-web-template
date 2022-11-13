@@ -79,6 +79,7 @@ module.exports = {
           {
             loader: '@riotjs/webpack-loader',
             options: {
+              emitWarning: true,
               hot: true
             }
           }
@@ -93,6 +94,7 @@ module.exports = {
         use: {
           loader: "svg-url-loader",
           options: {
+            emitWarning: true,
             // make all svg images to work in IE
             iesafe: true,
           },
@@ -104,6 +106,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
+              emitWarning: true,
               name: '[name].[contenthash].[ext]',
               outputPath: 'assets/',
               publicPath: 'assets/',

@@ -1,7 +1,8 @@
-import { head } from 'lodash'
+import { head, result } from 'lodash'
 import Auth from './auth'
 import $ from 'jquery'
-import { get } from 'idb-keyval' // https://www.npmjs.com/package/idb-keyval
+import { setManyDB, getDB } from './storage'
+import { showAlertError } from './alerts'
 
 export const jquery = $
 
@@ -34,19 +35,19 @@ export const getProject = () => {
 // export const error = observable()
 
 const myMenuFn = async () => {
-    const menu = await get('package_menu')
+    const menu = await getDB('package_menu')
     return menu
 }
 export const myMenu = myMenuFn
 
 export const myAllProjects = async () => {
-    const projectOwn = await get('my_projects')
-    const projectCompetitor = await get('competitor_projects')
+    const projectOwn = await getDB('my_projects')
+    const projectCompetitor = await getDB('competitor_projects')
     return [...(projectOwn || []), ...(projectCompetitor || [])]
 }
 
 export const myCurrentProject = async () => {
-    const currentProject = await get('current_project')
+    const currentProject = await getDB('current_project')
     return currentProject
 }
 
@@ -106,14 +107,43 @@ export const myMenuRoutes = async () => {
 }
 
 export const getUserProfile = async () => {
-    const profileId = await get('user_id')
-    const profileName = await get('user_name')
-    const profileAvatar = await get('user_profile_avatar')
-    const lastLogin = await get('last_login')
+    const profileId = await getDB('user_id')
+    const profileName = await getDB('user_name')
+    const profileAvatar = await getDB('user_profile_avatar')
+    const lastLogin = await getDB('last_login')
     return {
         profileId,
         profileName,
         profileAvatar,
         lastLogin
+    }
+}
+
+export const setupLoginInfo = async (data) => {
+    try {
+        await setManyDB([
+            ['app_token', result(data, 'token')],
+            ['user_id', result(data, 'id')],
+            ['user_name', result(data, 'name')],
+            ['user_profile_avatar', result(data, 'avatar')],
+            ['app_token_expires', result(data, 'expires_token')],
+            ['my_projects', result(data, 'client_projects')],
+            ['competitor_projects', result(data, 'project').filter(x => x.is_competitor)],
+            ['client_id', result(data, 'clientid')],
+            ['package_name', result(data, 'package.package')],
+            ['package_menu', result(data, 'package.menu')],
+            ['package_max_date', result(data, 'package.records.max_date')],
+            ['package_max_keywords', result(data, 'package.records.max_keywords')],
+            ['package_max_streams', result(data, 'package.records.max_streams')],
+            ['package_max_projects', result(data, 'package.records.max_projects')],
+            ['package_channels', result(data, 'package.channels')],
+            ['package_commandcenter', result(data, 'package.command_center')],
+            ['package_available_keywords', result(data, 'package.keyword_available')],
+            ['current_project', [result(data, 'project[0]')]],
+            ['last_login', result(data, 'last_logged_in')]
+        ])
+        return true
+    } catch (err) {
+        showAlertError(err)
     }
 }

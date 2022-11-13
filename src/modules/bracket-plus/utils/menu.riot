@@ -5,7 +5,7 @@
     </div>
     <div class="br-sideleft overflow-y-auto shadow-base">
         <ul class="br-sideleft-menu mg-t-10">
-            <li class="br-menu-item cursor-pointer" each="{ menuItem in state.menu }">
+            <li class="br-menu-item" each="{ menuItem in state.menu }">
                 <a href="{ menuItem.link }?project={ state.currentProject }" target="{ menuItem.target || '' }" onclick="{gotoLink}"
                     data-link="{ menuItem.link }" data-name="{ menuItem.name }"
                     class="br-menu-link { menuItem.hasChild ? 'with-sub' : '' } { menuItem.class } {menuItem.name === state.activeMenu ? 'active' : ''}">
@@ -13,7 +13,7 @@
                     <span class="menu-item-label">{ menuItem.title }</span>
                 </a>
                 <ul if="{ menuItem.childs }" class="br-menu-sub {menuItem.name === state.activeMenu ? 'd-block' : ''}">
-                    <li class="sub-item cursor-pointer" each="{ childMenu in menuItem.childs }">
+                    <li class="sub-item" each="{ childMenu in menuItem.childs }">
                         <a href="{ childMenu.link }?project={ state.currentProject }" target="{ childMenu.target || '' }" onclick="{ gotoLink }"
                             data-link="{ childMenu.link }" data-name="{ childMenu.name }"
                             class="sub-link color-blueteal">{ childMenu.title }</a>

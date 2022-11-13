@@ -1,4 +1,5 @@
 import { logInfo } from './logs'
+import { setMany, get, set, clear } from 'idb-keyval' // https://www.npmjs.com/package/idb-keyval
 
 export const getStorage = (key, defaultValue='', {prefix=''}={}) => {
     if (prefix) prefix = `${prefix}_`
@@ -21,3 +22,8 @@ export const changeStorage = (data, prefix='') => {
         logInfo(`[STORAGE] setting ${fullKey}`)
     }
 }
+
+export const setManyDB = setMany
+export const getDB = get
+export const setDB = set
+export const clearDB = clear

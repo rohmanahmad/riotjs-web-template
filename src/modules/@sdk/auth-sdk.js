@@ -1,13 +1,13 @@
 import { Request } from './index'
 import { showAlertError } from 'MyHelpers/alerts'
 import { result } from 'lodash'
-import { get } from 'idb-keyval' // https://www.npmjs.com/package/idb-keyval
+import { getDB } from 'MyHelpers/storage'
 
 const baseURL = R10_API_URL
 
 export const checkAuth = async function (query) {
     try {
-        const token = await get('app_token')
+        const token = await getDB('app_token')
         let req = new Request()
         req.setBaseURL(baseURL)
         req.setBearerToken(token)

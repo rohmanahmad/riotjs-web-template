@@ -1,0 +1,20 @@
+<!-- 
+    props: 
+        - type String [range, single]
+        - since String(Date Formated) 'YYYY-MM-DD'
+        - until String(Date Formated) 'YYYY-MM-DD'
+        - date-options Object{DateRangePickerOptions}
+
+ -->
+
+<date-range-picker>
+    <div id="{ state.id }" class="{ props.elClass }">
+        <font-icon icon-type="fa" icon-name="fa-calendar" el-class="mg-r-5 cursor-pointer"/>
+        <span></span>
+        <font-icon icon-type="fa" icon-name="fa-caret-down" el-class="mg-l-5 cursor-pointer"/>
+    </div>
+    <script>
+        import controller from './date-range-picker'
+        export default controller
+    </script>
+</date-range-picker>
